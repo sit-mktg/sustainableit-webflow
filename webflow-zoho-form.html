@@ -1,0 +1,1006 @@
+<!-- START: Zoho form -->
+
+<!-- CSS -->
+
+<style>
+/*
+html,body{
+  margin: 0px;
+}
+*/
+#crmWebToEntityForm.zcwf_lblTopBottom {
+  width:100%;
+  padding: 25px;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+#crmWebToEntityForm.zcwf_lblTopBottom * {
+  box-sizing: border-box;
+}
+#crmWebToEntityForm{text-align: left;}
+#crmWebToEntityForm * {
+  direction: ltr;
+}
+.zcwf_lblTopBottom .zcwf_title {
+  word-wrap: break-word;
+  padding: 0px 6px 10px;
+  font-weight:bold }.zcwf_lblTopBottom.cpT_primaryBtn:hover{
+  background: linear-gradient(#02acff 0,#006be4 100%) no-repeat padding-box !important;
+  box-shadow: 0 -2px 0 0 #0159b9 inset !important;
+  border: 0 !important;
+  color: #fff !important;
+  outline: 0 !important;
+}.zcwf_lblTopBottom .zcwf_col_fld input[type=text], input[type=password], .zcwf_lblTopBottom .zcwf_col_fld textarea {
+  width: 60%;
+  border: 1px solid #c0c6cc !important;
+  resize: vertical;
+  border-radius: 2px;
+  float: left;
+}
+.zcwf_lblTopBottom .zcwf_col_lab {
+  width: 30%;
+  word-break: break-word;
+  padding: 0px 6px 0px;
+  margin-right: 10px;
+  margin-top: 5px;
+  padding-bottom: 4px;
+}
+.zcwf_lblTopBottom .zcwf_col_fld {
+  width: 60%;
+  padding: 0px 6px 0px;
+  position: relative;
+  margin-top: 5px;
+}
+.zcwf_lblTopBottom .zcwf_privacy{padding: 6px;}
+.zcwf_lblTopBottom .wfrm_fld_dpNn{display: none;}
+.dIB{display: inline-block;}
+.zcwf_lblTopBottom .zcwf_col_fld_slt {
+  width: 60%;
+  border: 1px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  font-size: 12px;
+  float: left;
+  resize: vertical;
+  padding: 2px 5px;
+}
+.zcwf_lblTopBottom .zcwf_row:after, .zcwf_lblTopBottom .zcwf_col_fld:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.zcwf_lblTopBottom .zcwf_col_help {
+  float: left;
+  margin-left: 7px;
+  font-size: 12px;
+  max-width: 35%;
+  word-break: break-word;
+}
+.zcwf_lblTopBottom .zcwf_help_icon {
+  cursor: pointer;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  background: #fff;
+  border: 1px solid #c0c6cc;
+  color: #c1c1c1;
+  text-align: center;
+  font-size: 11px;
+  line-height: 16px;
+  font-weight: bold;
+  border-radius: 50%;
+}
+.zcwf_lblTopBottom .zcwf_row {margin: 15px 0px;}
+.zcwf_lblTopBottom .formsubmit {
+  margin-right: 5px;
+  cursor: pointer;
+  color: var(--baseColor);
+  font-size: 12px;
+}
+.zcwf_lblTopBottom .zcwf_privacy_txt {
+  width: 90%;
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-family: Arial;
+  display: inline-block;
+  vertical-align: top;
+  color: var(--baseColor);
+  padding-top: 2px;
+  margin-left: 6px;
+}
+.zcwf_lblTopBottom .zcwf_button {
+  font-size: 12px;
+  color: var(--baseColor);
+  border: 1px solid #c0c6cc;
+  padding: 3px 9px;
+  border-radius: 4px;
+  cursor: pointer;
+  max-width: 120px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.zcwf_lblTopBottom .zcwf_tooltip_over{
+  position: relative;
+}
+.zcwf_lblTopBottom .zcwf_tooltip_ctn{
+  position: absolute;
+  background: #dedede;
+  padding: 3px 6px;
+  top: 3px;
+  border-radius: 4px;word-break: break-word;
+  min-width: 100px;
+  max-width: 150px;
+  color: var(--baseColor);
+  z-index: 100;
+}
+.zcwf_lblTopBottom .zcwf_ckbox{
+  float: left;
+}
+.zcwf_lblTopBottom .zcwf_file{
+  width: 35%;
+  box-sizing: border-box;
+  float: left;
+}
+.clearB:after{
+  content:'';
+  display: block;
+  clear: both;
+}
+@media all  {
+  .zcwf_lblTopBottom .zcwf_col_lab, .zcwf_lblTopBottom .zcwf_col_fld {
+    width: auto;
+    float: none !important;
+  }
+  .zcwf_lblTopBottom .zcwf_col_help {width: 40%;}
+}
+
+/* Custom CSS and overrides */
+#crmWebToEntityForm.zcwf_lblTopBottom {
+  padding: 0;
+}
+.zcwf_lblTopBottom .zcwf_row {
+  margin: 12px 0px 0px;
+  /* display: inline-block; */
+  position: relative;
+  vertical-align: text-top;
+}
+@media (min-width: 992px) {
+  .zcwf_lblTopBottom .zcwf_row {
+    display: inline-block;
+    width: 46%;
+    margin-right: 14px;
+  }
+}
+.zcwf_lblTopBottom .zcwf_row label,
+.zcwf_lblTopBottom .zcwf_row .zcwf_fld {
+  /* margin: 0 !important;
+  padding: 0 !important; */
+}
+.zcwf_lblTopBottom .zcwf_row label:not(.newCustomchkbox-md) {
+  width: auto !important;
+  position: absolute;
+  top: 11px;
+  left: 11px;
+  transform-origin: top left;
+  transition: all 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+  z-index: 10;
+}
+.zcwf_lblTopBottom .zcwf_row.isSelected label:not(.newCustomchkbox-md), .zcwf_lblTopBottom .zcwf_row.isDirty label:not(.newCustomchkbox-md) {
+  top: -9px;
+  left: 5px;
+  transform: scale3d(0.85, 0.85, 0.85);
+  background: #fff;
+  padding: 0 4px !important;
+}
+.zcwf_lblTopBottom .zcwf_row label:not(.newCustomchkbox-md) {
+  /*font-family: 'Gilroy-semibold', Helvetica, Arial, sans-serif;*/
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+}
+.zcwf_lblTopBottom .zcwf_row input[type=text],
+.zcwf_lblTopBottom .zcwf_row select,
+.zcwf_lblTopBottom .zcwf_row textarea {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  width: 100% !important;
+  border: 1px solid #efefef !important;
+  background-color: #efefef !important;
+  padding: 8px 8px !important;
+  line-height: 1 !important;
+  border-radius: 0 !important;
+  min-height: 36px !important;
+  max-height: 36px !important;
+}
+.zcwf_lblTopBottom .zcwf_row select {
+  padding-left: 4px !important;
+}
+.zcwf_lblTopBottom .zcwf_row input[type=text]:focus,
+.zcwf_lblTopBottom .zcwf_row select:focus,
+.zcwf_lblTopBottom .zcwf_row textarea:focus {
+  outline: none;
+}
+.zcwf_lblTopBottom .zcwf_row input[type=text].zcwf_invalid,
+.zcwf_lblTopBottom .zcwf_row select.zcwf_invalid,
+.zcwf_lblTopBottom .zcwf_row textarea.zcwf_invalid {
+  border-color: red !important;
+}
+.zcwf_lblTopBottom .zcwf_row textarea {
+  resize: none;
+}
+.zcwf_lblTopBottom .newCustomchkbox-md {
+  border: 2px solid #fff;
+  padding: 0;
+  height: 17px;
+  border-radius: 5px;
+  margin-top: 2px;
+}
+.zcwf_lblTopBottom .newCustomchkbox-md.zcwf_invalid {
+  border-color: red !important;
+}
+#privacyTool5387169000006544001 {
+  /* margin-top: 4px; */
+}
+.zcwf_lblTopBottom .zcwf_privacy_txt {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  /* margin-left: 25px;
+  margin-top: 4px; */
+}
+.zcwf_lblTopBottom .zcwf_privacy_txt a {
+  font-size: inherit !important;
+}
+#privacyErr5387169000006544001 {
+  display: none;
+}
+.zcwf_lblTopBottom .formsubmit {
+  font-family: 'ProximaNova-bold', Helvetica, Arial, sans-serif;
+  font-size: 15px !important;
+  color: #fff !important;
+  padding: 6px 15px 5px !important;
+  border: 2px solid #04BF20 !important;
+  border-radius: 25px;
+  background-color: #04BF20 !important;
+  background-image: none !important;
+  transition: all 0.15s ease-in-out;
+}
+.zcwf_lblTopBottom .formsubmit:hover {
+  border-color: #029c19 !important;
+  background-color: #029c19 !important;
+}
+</style>
+
+<!-- Note :
+ - You can modify the font style and form style to suit your website.
+ - Code lines with comments Do not remove this code are required for the form to work properly, make sure that you do not remove these lines of code.
+ - The Mandatory check script can modified as to suit your business needs.
+ - It is important that you test the modified form before going live.-->
+<div id='crmWebToEntityForm' class='zcwf_lblTopBottom crmWebToEntityForm'>
+  <form id='webform5387169000006544001' name=WebToLeads5387169000006544001 accept-charset='UTF-8'>
+  <input type='text' style='display:none;' name='xnQsjsdp' value='df7a0b33245e1e2a92b39b487daec293e20a4c7eb526fd19fdebde4ed425c3c4'></input>
+  <input type='hidden' name='zc_gad' id='zc_gad' value=''></input>
+  <input type='text' style='display:none;' name='xmIwtLD' value='179530ed5eb9718b07962e977a06566347e4e179bc311b1f53a07d7aadc8fccf10671f4936f83ca6d3e1acd1b38f8e39'></input>
+  <input type='text'  style='display:none;' name='actionType' value='TGVhZHM='></input>
+  <input type='text' style='display:none;' name='returnURL' value='null' > </input>
+  <div class='zcwf_row'>
+    <label for='First_Name'>First Name<span style='color:red;'>*</span></label>
+    <input type='text' id='First_Name' name='First Name' maxlength='40' class='zcwf_fld'></input>
+    <div class='zcwf_col_help'></div>
+  </div>
+  <div class='zcwf_row'>
+    <label for='Last_Name'>Last Name<span style='color:red;'>*</span></label>
+    <input type='text' id='Last_Name' name='Last Name' maxlength='80' class='zcwf_fld'></input>
+    <div class='zcwf_col_help'></div>
+  </div>
+  <div class='zcwf_row'>
+    <label for='Email'>Email<span style='color:red;'>*</span></label>
+    <input type='text' ftype='email' autocomplete='false' id='Email' name='Email' crmlabel='' maxlength='100' class='zcwf_fld'></input>
+    <div class='zcwf_col_help'></div>
+  </div>
+  <div class='zcwf_row'>
+    <label for='Phone'>Phone<span style='color:red;'>*</span></label>
+    <input type='text' id='Phone' name='Phone' maxlength='30' class='zcwf_fld'></input>
+    <div class='zcwf_col_help'></div>
+  </div>
+  <div class='zcwf_row'>
+    <label for='Company'>Company<span style='color:red;'>*</span></label>
+    <input type='text' id='Company' name='Company' maxlength='200' class='zcwf_fld'></input>
+    <div class='zcwf_col_help'></div>
+  </div>
+  <div class='zcwf_row'>
+    <label for='LEADCF4'>Country<span style='color:red;'>*</span></label>
+    <select class='zcwf_col_fld_slt zcwf_fld' id='LEADCF4' name='LEADCF4'>
+      <option value=''></option>
+      <option value='Afghanistan'>Afghanistan</option>
+      <option value='Albania'>Albania</option>
+      <option value='Algeria'>Algeria</option>
+      <option value='American&#x20;Samoa'>American Samoa</option>
+      <option value='Andorra'>Andorra</option>
+      <option value='Angola'>Angola</option>
+      <option value='Anguilla'>Anguilla</option>
+      <option value='Antarctica'>Antarctica</option>
+      <option value='Antigua&#x20;and&#x20;Barbuda'>Antigua and Barbuda</option>
+      <option value='Argentina'>Argentina</option>
+      <option value='Armenia'>Armenia</option>
+      <option value='Aruban'>Aruban</option>
+      <option value='Australia'>Australia</option>
+      <option value='Austria'>Austria</option>
+      <option value='Azerbaijan'>Azerbaijan</option>
+      <option value='Bahamas'>Bahamas</option>
+      <option value='Bahrain'>Bahrain</option>
+      <option value='Bangladesh'>Bangladesh</option>
+      <option value='Barbados'>Barbados</option>
+      <option value='Belarus'>Belarus</option>
+      <option value='Belgium'>Belgium</option>
+      <option value='Belize'>Belize</option>
+      <option value='Benin'>Benin</option>
+      <option value='Bermuda'>Bermuda</option>
+      <option value='Bhutan'>Bhutan</option>
+      <option value='Bolivia'>Bolivia</option>
+      <option value='Bosnia&#x20;and&#x20;Herzegovina'>Bosnia and Herzegovina</option>
+      <option value='Botswana'>Botswana</option>
+      <option value='Bouvet&#x20;Island'>Bouvet Island</option>
+      <option value='Brazil'>Brazil</option>
+      <option value='British&#x20;Indian&#x20;Ocean&#x20;Territory'>British Indian Ocean Territory</option>
+      <option value='British&#x20;Virgin&#x20;Islands'>British Virgin Islands</option>
+      <option value='Brunei'>Brunei</option>
+      <option value='Bulgaria'>Bulgaria</option>
+      <option value='Burkina&#x20;Faso'>Burkina Faso</option>
+      <option value='Burundi'>Burundi</option>
+      <option value='Cambodia'>Cambodia</option>
+      <option value='Cameroon'>Cameroon</option>
+      <option value='Canada'>Canada</option>
+      <option value='Cape&#x20;Verde'>Cape Verde</option>
+      <option value='Cayman&#x20;Islands'>Cayman Islands</option>
+      <option value='Central&#x20;African&#x20;Republic'>Central African Republic</option>
+      <option value='Chad'>Chad</option>
+      <option value='Chile'>Chile</option>
+      <option value='China'>China</option>
+      <option value='Christmas&#x20;Island'>Christmas Island</option>
+      <option value='Cocos&#x20;Islands'>Cocos Islands</option>
+      <option value='Colombia'>Colombia</option>
+      <option value='Comoros'>Comoros</option>
+      <option value='Republic&#x20;of&#x20;the&#x20;Congo'>Republic of the Congo</option>
+      <option value='Cook&#x20;Islands'>Cook Islands</option>
+      <option value='Costa&#x20;Rica'>Costa Rica</option>
+      <option value='Croatia'>Croatia</option>
+      <option value='Cuba'>Cuba</option>
+      <option value='Cyprus'>Cyprus</option>
+      <option value='Czech&#x20;Republic'>Czech Republic</option>
+      <option value='Cote&#x20;d&#x27;Ivoire'>Cote d&#x27;Ivoire</option>
+      <option value='Denmark'>Denmark</option>
+      <option value='Djibouti'>Djibouti</option>
+      <option value='Dominica'>Dominica</option>
+      <option value='Dominican&#x20;Republic'>Dominican Republic</option>
+      <option value='Ecuador'>Ecuador</option>
+      <option value='Egypt'>Egypt</option>
+      <option value='El&#x20;Salvador'>El Salvador</option>
+      <option value='Equatorial&#x20;Guinea'>Equatorial Guinea</option>
+      <option value='Eritrea'>Eritrea</option>
+      <option value='Estonia'>Estonia</option>
+      <option value='Ethiopia'>Ethiopia</option>
+      <option value='Falkland&#x20;Islands'>Falkland Islands</option>
+      <option value='Faroe&#x20;Islands'>Faroe Islands</option>
+      <option value='Fiji'>Fiji</option>
+      <option value='Finland'>Finland</option>
+      <option value='France'>France</option>
+      <option value='French&#x20;Guiana'>French Guiana</option>
+      <option value='French&#x20;Polynesia'>French Polynesia</option>
+      <option value='French&#x20;Southern&#x20;Territories'>French Southern Territories</option>
+      <option value='Gabon'>Gabon</option>
+      <option value='Gambia'>Gambia</option>
+      <option value='Georgia'>Georgia</option>
+      <option value='Germany'>Germany</option>
+      <option value='Ghana'>Ghana</option>
+      <option value='Gibraltar'>Gibraltar</option>
+      <option value='Greece'>Greece</option>
+      <option value='Greenland'>Greenland</option>
+      <option value='Grenada'>Grenada</option>
+      <option value='Guadeloupe'>Guadeloupe</option>
+      <option value='Guam'>Guam</option>
+      <option value='Guatemala'>Guatemala</option>
+      <option value='Guernsey'>Guernsey</option>
+      <option value='Guinea'>Guinea</option>
+      <option value='GuineaBissau'>GuineaBissau</option>
+      <option value='Guyana'>Guyana</option>
+      <option value='Haiti'>Haiti</option>
+      <option value='Heard&#x20;Island&#x20;and&#x20;McDonald&#x20;Islands'>Heard Island and McDonald Islands</option>
+      <option value='Honduras'>Honduras</option>
+      <option value='Hong&#x20;Kong'>Hong Kong</option>
+      <option value='Hungary'>Hungary</option>
+      <option value='Iceland'>Iceland</option>
+      <option value='India'>India</option>
+      <option value='Indonesia'>Indonesia</option>
+      <option value='Iran'>Iran</option>
+      <option value='Iraq'>Iraq</option>
+      <option value='Ireland'>Ireland</option>
+      <option value='Israel'>Israel</option>
+      <option value='Italy'>Italy</option>
+      <option value='Jamaica'>Jamaica</option>
+      <option value='Japan'>Japan</option>
+      <option value='Jersey'>Jersey</option>
+      <option value='Jordan'>Jordan</option>
+      <option value='Kazakhstan'>Kazakhstan</option>
+      <option value='Kenya'>Kenya</option>
+      <option value='Kiribati'>Kiribati</option>
+      <option value='Kosovo'>Kosovo</option>
+      <option value='Kuwait'>Kuwait</option>
+      <option value='Kyrgyzstan'>Kyrgyzstan</option>
+      <option value='Laos'>Laos</option>
+      <option value='Latvia'>Latvia</option>
+      <option value='Lebanon'>Lebanon</option>
+      <option value='Lesotho'>Lesotho</option>
+      <option value='Liberia'>Liberia</option>
+      <option value='Libya'>Libya</option>
+      <option value='Liechtenstein'>Liechtenstein</option>
+      <option value='Lithuania'>Lithuania</option>
+      <option value='Luxembourg'>Luxembourg</option>
+      <option value='Macao'>Macao</option>
+      <option value='North&#x20;Macedonia'>North Macedonia</option>
+      <option value='Madagascar'>Madagascar</option>
+      <option value='Malawi'>Malawi</option>
+      <option value='Malaysia'>Malaysia</option>
+      <option value='Maldives'>Maldives</option>
+      <option value='Mali'>Mali</option>
+      <option value='Malta'>Malta</option>
+      <option value='Marshall&#x20;Islands'>Marshall Islands</option>
+      <option value='Martinique'>Martinique</option>
+      <option value='Mauritania'>Mauritania</option>
+      <option value='Mauritius'>Mauritius</option>
+      <option value='Mayotte'>Mayotte</option>
+      <option value='Mexico'>Mexico</option>
+      <option value='Micronesia'>Micronesia</option>
+      <option value='Moldova'>Moldova</option>
+      <option value='Monaco'>Monaco</option>
+      <option value='Mongolia'>Mongolia</option>
+      <option value='Montenegro'>Montenegro</option>
+      <option value='Montserrat'>Montserrat</option>
+      <option value='Morocco'>Morocco</option>
+      <option value='Mozambique'>Mozambique</option>
+      <option value='Myanmar'>Myanmar</option>
+      <option value='Namibia'>Namibia</option>
+      <option value='Nauru'>Nauru</option>
+      <option value='Nepal'>Nepal</option>
+      <option value='Netherlands'>Netherlands</option>
+      <option value='Netherlands&#x20;Antilles'>Netherlands Antilles</option>
+      <option value='New&#x20;Caledonia'>New Caledonia</option>
+      <option value='New&#x20;Zealand'>New Zealand</option>
+      <option value='Nicaragua'>Nicaragua</option>
+      <option value='Niger'>Niger</option>
+      <option value='Nigeria'>Nigeria</option>
+      <option value='Niue'>Niue</option>
+      <option value='Norfolk&#x20;Island'>Norfolk Island</option>
+      <option value='North&#x20;Korea'>North Korea</option>
+      <option value='Northern&#x20;Ireland'>Northern Ireland</option>
+      <option value='Northern&#x20;Mariana&#x20;Islands'>Northern Mariana Islands</option>
+      <option value='Norway'>Norway</option>
+      <option value='Oman'>Oman</option>
+      <option value='Pakistan'>Pakistan</option>
+      <option value='Palau'>Palau</option>
+      <option value='Palestine'>Palestine</option>
+      <option value='Panama'>Panama</option>
+      <option value='Papua&#x20;New&#x20;Guinea'>Papua New Guinea</option>
+      <option value='Paraguay'>Paraguay</option>
+      <option value='Peru'>Peru</option>
+      <option value='Philippines'>Philippines</option>
+      <option value='Pitcairn'>Pitcairn</option>
+      <option value='Poland'>Poland</option>
+      <option value='Portugal'>Portugal</option>
+      <option value='Puerto&#x20;Rico'>Puerto Rico</option>
+      <option value='Qatar'>Qatar</option>
+      <option value='Reunion'>Reunion</option>
+      <option value='Romania'>Romania</option>
+      <option value='Russia'>Russia</option>
+      <option value='Rwanda'>Rwanda</option>
+      <option value='Saint&#x20;Helena'>Saint Helena</option>
+      <option value='Saint&#x20;Kitts&#x20;and&#x20;Nevis'>Saint Kitts and Nevis</option>
+      <option value='Saint&#x20;Lucia'>Saint Lucia</option>
+      <option value='Saint&#x20;Pierre&#x20;and&#x20;Miquelon'>Saint Pierre and Miquelon</option>
+      <option value='Saint&#x20;Vincent&#x20;and&#x20;the&#x20;Grenadines'>Saint Vincent and the Grenadines</option>
+      <option value='Samoa'>Samoa</option>
+      <option value='San&#x20;Marino'>San Marino</option>
+      <option value='Sao&#x20;Tome&#x20;and&#x20;Principe'>Sao Tome and Principe</option>
+      <option value='Saudi&#x20;Arabia'>Saudi Arabia</option>
+      <option value='Senegal'>Senegal</option>
+      <option value='Serbia'>Serbia</option>
+      <option value='Serbia&#x20;and&#x20;Montenegro'>Serbia and Montenegro</option>
+      <option value='Seychelles'>Seychelles</option>
+      <option value='Sierra&#x20;Leone'>Sierra Leone</option>
+      <option value='Singapore'>Singapore</option>
+      <option value='Slovakia'>Slovakia</option>
+      <option value='Slovenia'>Slovenia</option>
+      <option value='Solomon&#x20;Islands'>Solomon Islands</option>
+      <option value='Somalia'>Somalia</option>
+      <option value='South&#x20;Africa'>South Africa</option>
+      <option value='South&#x20;Georgia&#x20;and&#x20;the&#x20;South&#x20;Sandwich&#x20;Islands'>South Georgia and the South Sandwich Islands</option>
+      <option value='South&#x20;Korea'>South Korea</option>
+      <option value='Spain'>Spain</option>
+      <option value='Sri&#x20;Lanka'>Sri Lanka</option>
+      <option value='Sudan'>Sudan</option>
+      <option value='Suriname'>Suriname</option>
+      <option value='Svalbard&#x20;and&#x20;Jan&#x20;Mayen'>Svalbard and Jan Mayen</option>
+      <option value='Eswatini'>Eswatini</option>
+      <option value='Sweden'>Sweden</option>
+      <option value='Switzerland'>Switzerland</option>
+      <option value='Syria'>Syria</option>
+      <option value='Taiwan'>Taiwan</option>
+      <option value='Tajikistan'>Tajikistan</option>
+      <option value='Tanzania'>Tanzania</option>
+      <option value='Thailand'>Thailand</option>
+      <option value='Democratic&#x20;Republic&#x20;of&#x20;the&#x20;Congo'>Democratic Republic of the Congo</option>
+      <option value='Timor-Leste'>Timor-Leste</option>
+      <option value='Togo'>Togo</option>
+      <option value='Tokelau'>Tokelau</option>
+      <option value='Tonga'>Tonga</option>
+      <option value='Trinidad&#x20;and&#x20;Tobago'>Trinidad and Tobago</option>
+      <option value='Tunisia'>Tunisia</option>
+      <option value='Turkey'>Turkey</option>
+      <option value='Turkmenistan'>Turkmenistan</option>
+      <option value='Turks&#x20;and&#x20;Caicos&#x20;Islands'>Turks and Caicos Islands</option>
+      <option value='Tuvalu'>Tuvalu</option>
+      <option value='Virgin&#x20;Islands'>Virgin Islands</option>
+      <option value='Uganda'>Uganda</option>
+      <option value='Ukraine'>Ukraine</option>
+      <option value='United&#x20;Arab&#x20;Emirates'>United Arab Emirates</option>
+      <option value='United&#x20;Kingdom'>United Kingdom</option>
+      <option value='United&#x20;States'>United States</option>
+      <option value='United&#x20;States&#x20;Minor&#x20;Outlying&#x20;Islands'>United States Minor Outlying Islands</option>
+      <option value='Uruguay'>Uruguay</option>
+      <option value='Uzbekistan'>Uzbekistan</option>
+      <option value='Vanuatu'>Vanuatu</option>
+      <option value='Vatican'>Vatican</option>
+      <option value='Venezuela'>Venezuela</option>
+      <option value='Vietnam'>Vietnam</option>
+      <option value='Wallis&#x20;and&#x20;Futuna'>Wallis and Futuna</option>
+      <option value='Western&#x20;Sahara'>Western Sahara</option>
+      <option value='Yemen'>Yemen</option>
+      <option value='Zambia'>Zambia</option>
+      <option value='Zimbabwe'>Zimbabwe</option>
+      <option value='Aland&#x20;Islands'>Aland Islands</option>
+    </select>
+    <div class='zcwf_col_help'></div>
+  </div>
+  <div class='zcwf_row'>
+    <label for='Designation'>Title<span style='color:red;'>*</span></label>
+    <input type='text' id='Designation' name='Designation' maxlength='100' class='zcwf_fld'></input>
+    <div class='zcwf_col_help'></div>
+  </div>
+  <div class='zcwf_row'>
+    <label for='LEADCF1'>Level/Function<span style='color:red;'>*</span></label>
+    <select class='zcwf_col_fld_slt zcwf_fld' id='LEADCF1' name='LEADCF1'>
+      <option value=''></option>
+      <option value='C-Suite&#x2f;SVP'>C-Suite&#x2f;SVP</option>
+      <option value='Cloud'>Cloud</option>
+      <option value='Risk&#x2f;Compliance'>Risk&#x2f;Compliance</option>
+      <option value='SRE'>SRE</option>
+      <option value='Application&#x20;Development'>Application Development</option>
+      <option value='Analytics&#x20;&amp;&#x20;AI&#x2f;ML'>Analytics &amp; AI&#x2f;ML</option>
+      <option value='IT&#x20;Operations'>IT Operations</option>
+      <option value='Other'>Other</option>
+    </select>
+    <div class='zcwf_col_help'></div>
+  </div>
+  <div class='zcwf_row'>
+    <label for='LEADCF2'>Interest<span style='color:red;'>*</span></label>
+    <select class='zcwf_col_fld_slt zcwf_fld' id='LEADCF2' name='LEADCF2'>
+      <option value=''></option>
+      <option value='Corporate&#x20;donation&#x2f;sponsorship'>Corporate donation&#x2f;sponsorship</option>
+      <option value='Community&#x20;involvement'>Community involvement</option>
+      <option value='Media&#x20;inquiry'>Media inquiry</option>
+      <option value='Membership'>Membership</option>
+      <option value='Other'>Other</option>
+    </select>
+    <div class='zcwf_col_help'></div>
+  </div>
+  <div class='zcwf_row'>
+    <label for='LEADCF3'>Comments</label>
+    <textarea id='LEADCF3' name='LEADCF3'></textarea>
+    <div class='zcwf_col_help'></div>
+  </div>
+  <div class='zcwf_row' style='display:none;'>
+    <label for='Lead_Source'>Lead Source</label>
+    <select class='zcwf_col_fld_slt' id='Lead_Source' name='Lead Source'>
+      <option value=''></option>
+      <option value='Advertisement'>Advertisement</option>
+      <option value='Cold&#x20;Call'>Cold Call</option>
+      <option value='Employee&#x20;Referral'>Employee Referral</option>
+      <option value='External&#x20;Referral'>External Referral</option>
+      <option value='Sit.org&#x20;Get&#x20;Involved'>Sit.org Get Involved</option>
+      <option value='Partner'>Partner</option>
+      <option value='Twitter'>Twitter</option>
+      <option value='Public&#x20;Relations'>Public Relations</option>
+      <option value='Facebook'>Facebook</option>
+      <option value='Sales&#x20;Email&#x20;Alias'>Sales Email Alias</option>
+      <option value='Google&#x2b;'>Google&#x2b;</option>
+      <option value='Seminar&#x20;Partner'>Seminar Partner</option>
+      <option value='Internal&#x20;Seminar'>Internal Seminar</option>
+      <option value='Trade&#x20;Show'>Trade Show</option>
+      <option value='SIT.org&#x20;Download'>SIT.org Download</option>
+      <option value='Web&#x20;Research'>Web Research</option>
+      <option value='Chat'>Chat</option>
+      <option value='Web&#x20;Form' selected>Web Form</option>
+    </select>
+    <div class='zcwf_col_help'></div>
+  </div>
+  <div class='zcwf_row' style='width:100%;margin:0;'>
+    <div class='zcwf_privacy'>
+      <div class='dIB vat' align='left'>
+        <div class='displayPurpose f13'>
+          <label id='privacyLabel' class='newCustomchkbox-md dIB w100per'>
+            <input autocomplete='off' id='privacyTool5387169000006544001' type='checkbox' name='privacyTool'>
+          </label>
+        </div>
+      </div>
+      <div class='dIB zcwf_privacy_txt'>By filling out this form, you agree to receive communications from SustainableIT and the terms of our <a href='https://www.sustainableit.org/privacy-policy' title='https://www.sustainableit.org/privacy-policy' target='_blank'>privacy policy</a>.</div>
+      <div id='privacyErr5387169000006544001' style='font-size:12px;color:red;padding-left: 5px;visibility:hidden;'>Please accept this</div>
+    </div>
+  </div>
+  <div class='zcwf_row' style='width:100%;margin-top:10px;'>
+    <input type='submit' id='formsubmit' class='formsubmit zcwf_button' value='Send' title='Send'>
+    <!-- <input type='reset' class='zcwf_button' name='reset' value='Reset' title='Reset'> -->
+  </div>
+  <!-- Do not remove this --- Analytics Tracking code starts -->
+  <script id='wf_anal' src='https://crm.zohopublic.com/crm/WebFormAnalyticsServeServlet?rid=82ede854d6cb8002088fe9dcf7d5123bb70068c0eddb0f6c9e766de68a7df30423c7fe62d7b9b43a5dfb1d3724b1ffcfgiddca87cb268ec68c70d1fa3d77ab9274e800f6bd59e38b409156511243df2a855gidfd9500821a426c9e5de3052fec5ae8b14e09e92eb0a17032031c82e3e0ac7621gid3006e21820eb03dcfb83ae77c6870279c8584ca395522f5f6b413d8aec604924&tw=3ca78af2cf790439c08c72a2989e15d52f38c5cbd4bb21bc2efecfdcf9fc18f2'></script>
+  <!-- Do not remove this --- Analytics Tracking code ends. -->
+</form>
+</div>
+
+<!-- JS -->
+
+<script type="text/javascript">
+(function( $ ) {
+
+  // Set classes.
+  var dirtyClass = "isDirty";
+  var selectedClass = "isSelected";
+
+  /**
+   * Check window width.
+   */
+  function winWidth() {
+    var width = $( window ).width();
+    return width;
+  };
+
+  /**
+   * Check if mobile.
+   */
+  function isMobile() {
+    var width = winWidth() < 768 ? true : false;
+    return width;
+  };
+
+  /**
+   * Placeholder
+   */
+  function placeholder() {
+
+    var target = $( "#form" );
+    if ( target.length ) {
+
+    }
+  };
+
+  /**
+   * Check if field is empty, add class.
+   */
+  function isEmpty($input) {
+    if ( $input.val() !== "" ) {
+        $input.parent( ".zcwf_row" ).addClass( dirtyClass );
+        //console.log($input);
+        $input.removeClass( "zcwf_invalid" );
+    }
+  };
+
+  /**
+   * Check if field is 'mktoDateField', add class.
+   */
+  function isDate($input) {
+    if ( $input.hasClass( "mktoDateField" ) ) {
+        $input.parent( ".mktoFieldWrap" ).addClass( dirtyClass );
+    }
+  };
+
+  /**
+   * Check if field is 'select', add class.
+   */
+  function isSelect($input) {
+    if ( $input.is( "select" ) ) {
+        $input.parent( ".mktoFieldWrap" ).addClass( dirtyClass );
+    }
+  };
+
+  /**
+   * Check if field is 'textarea', add class.
+   */
+  function isTextarea($input) {
+    if ( $input.is( "textarea" ) ) {
+        $input.parent( ".mktoFieldWrap" ).addClass( dirtyClass );
+    }
+  };
+
+  /**
+   * Check form input values.
+   */
+  function checkFormInputs() {
+    setTimeout(function() {
+      $( ".zcwf_fld" ).each( function() {
+        isEmpty( $( this ) );
+        //isDate( $( this ) );
+        //isSelect( $( this ) );
+        //isTextarea( $( this ) );
+      });
+    }, 750);
+  };
+
+  /**
+   * Toggle form inputs.
+   */
+  function toggleFormInputs() {
+    setTimeout(function() {
+      $( ".zcwf_fld" ).on( "focusin", function( e ) {
+        $( this ).parent( ".zcwf_row" ).addClass( selectedClass );
+      });
+      $( ".zcwf_fld" ).on( "focusout", function( e ) {
+        $( this ).parent( ".zcwf_row" ).removeClass( selectedClass );
+        isEmpty( $(e.currentTarget) );
+      });
+    }, 750);
+  };
+
+  /**
+   * Add Mkto 'whenReady' callback and audit inputs.
+   */
+  function readyForm() {
+    MktoForms2.whenReady(function (form) {
+      checkFormInputs();
+      toggleFormInputs();
+
+      // Change submit button value
+      var formEl = form.getFormElem()[0];
+      var buttonEl = formEl.querySelector("button[type='submit']");
+      buttonEl.innerHTML = "Send";
+
+      form.onSuccess(function() {
+        // Get the values
+        var vals = form.vals();
+
+        // Hide form, show thank you message.
+        $('#form-inner').css('display', 'none');
+        $('#form-completed').fadeIn("slow");
+
+        // GTM integration
+        var mktoFormId = form.getId();
+        dataLayer.push({
+          'event': 'formSubmit',
+          'mktoFormId': mktoFormId
+        });
+
+        return false;
+      });
+    });
+  };
+
+  /**
+   * Enable mobile menu.
+   */
+  function enableMobileMenu() {
+    $( ".menu-open-trigger" ).on( 'click', function( e ) {
+      e.preventDefault();
+      $( "#nav" ).toggleClass( "menu-closed", false );
+      $( "#nav" ).toggleClass( "menu-open", true );
+    });
+    $( ".menu-close-trigger" ).on( 'click', function( e ) {
+      e.preventDefault();
+      $( "#nav" ).toggleClass( "menu-closed", true );
+      $( "#nav" ).toggleClass( "menu-open", false );
+    });
+  };
+
+  /* == Zoho functions == */
+
+  /**
+   * Privacy alert.
+   */
+  function privacyAlert5387169000006544001() {
+    var privacyTool = document.getElementById('privacyTool5387169000006544001');
+    var privacyErr = document.getElementById('privacyErr5387169000006544001');
+    if (privacyTool !=undefined && !privacyTool.checked ) {
+      privacyErr.style.visibility='visible';
+      privacyTool.focus();
+      return false;
+    }
+    return true;
+  };
+
+  /**
+   * Disable error.
+   */
+  function disableErr5387169000006544001() {
+    var privacyTool = document.getElementById('privacyTool5387169000006544001');
+    var privacyErr = document.getElementById('privacyErr5387169000006544001');
+    if (privacyTool !=undefined && privacyTool.checked && privacyErr !=undefined ) {
+      privacyErr.style.visibility='hidden';
+    }
+  };
+
+  /**
+   * Validate email field.
+   */
+  function validateEmail5387169000006544001() {
+    var form = document.forms['WebToLeads5387169000006544001'];
+    var emailFld = form.querySelectorAll('[ftype=email]');
+    var i;
+    for (i = 0; i < emailFld.length; i++) {
+      var emailVal = emailFld[i].value;
+      if ((emailVal.replace(/^\s+|\s+$/g, '')).length!=0 ) {
+        var atpos=emailVal.indexOf('@');
+        var dotpos=emailVal.lastIndexOf('.');
+        if (atpos<1 || dotpos<atpos+2 || dotpos+2>=emailVal.length) {
+          //alert('Please enter a valid email address. ');
+          emailFld[i].classList.add('zcwf_invalid');
+          emailFld[i].focus();
+          return false;
+        }
+      }
+    }
+    return true;
+  };
+
+  /**
+   * Validate privacy checkbox.
+   */
+  function checkPrivacy() {
+    var privacyTool = document.getElementById('privacyTool5387169000006544001');
+    var privacyLabel = document.getElementById('privacyLabel');
+    var privacyErr = document.getElementById('privacyErr5387169000006544001');
+    if (privacyTool !=undefined && !privacyTool.checked ) {
+      //privacyErr.style.visibility='visible';
+      privacyLabel.classList.add('zcwf_invalid');
+      privacyTool.focus();
+      return false;
+    } else if (privacyTool !=undefined && privacyTool.checked && privacyErr !=undefined ) {
+      //privacyErr.style.visibility='hidden';
+      privacyLabel.classList.remove('zcwf_invalid');
+    }
+    return true;
+  };
+
+  /**
+   * Check mandatory fields.
+   */
+  function checkMandatory5387169000006544001() {
+    var mndFileds = new Array('First Name','Last Name','Email','Phone','Company','LEADCF4','Designation','LEADCF1','LEADCF2');
+    var fldLangVal = new Array('First\x20Name','Last\x20Name','Email','Phone','Company','Country','Title','Level\x2FFunction','Interest');
+    // var mndFileds = new Array('Company','First Name','Last Name','Designation','Email','Phone','LEADCF1','LEADCF2','LEADCF4');
+    // var fldLangVal = new Array('Company','First\x20Name','Last\x20Name','Title','Email','Phone','Level\x2FFunction','Interest','Country\x20\x28new\x20picklist\x29');
+    for(i=0;i<mndFileds.length;i++) {
+      var fieldObj=document.forms['WebToLeads5387169000006544001'][mndFileds[i]];
+      if (fieldObj) {
+        if (((fieldObj.value).replace(/^\s+|\s+$/g, '')).length==0) {
+          //alert(fldLangVal[i] +' cannot be empty.');
+          fieldObj.classList.add('zcwf_invalid');
+          fieldObj.focus();
+          return false;
+        } else if(fieldObj.nodeName=='SELECT') {
+          if (fieldObj.options[fieldObj.selectedIndex].value=='') {
+            //alert(fldLangVal[i] +' cannot be none.');
+            fieldObj.classList.add('zcwf_invalid');
+            fieldObj.focus();
+            return false;
+          }
+        } else if (fieldObj.type =='checkbox') {
+          if (fieldObj.checked == false) {
+            alert('Please accept  '+fldLangVal[i]);
+            fieldObj.focus();
+            return false;
+          }
+        }
+
+        try {
+          if (fieldObj.name == 'Last Name') {
+            name = fieldObj.value;
+          }
+        } catch (e) {}
+      }
+    }
+    if(!validateEmail5387169000006544001()){return false;}
+    //if(!privacyAlert5387169000006544001()){return false;}
+    if(!checkPrivacy()){return false;}
+
+    var urlparams = new URLSearchParams( window.location.search);
+    if(urlparams.has('service') && (urlparams.get('service')==='smarturl')){
+      var webform = document.getElementById('webform5387169000006544001');
+      var service =  urlparams.get('service');
+      var smarturlfield = document.createElement('input');
+      smarturlfield.setAttribute('type','hidden');
+      smarturlfield.setAttribute('value',service);
+      smarturlfield.setAttribute('name','service');
+      webform.appendChild(smarturlfield);
+    }
+
+    document.querySelector('.crmWebToEntityForm .formsubmit').setAttribute('disabled', true);
+      return true;
+  };
+
+
+  /**
+   * Ready Zoho form.
+   */
+  function readyZohoForm() {
+    checkFormInputs();
+    toggleFormInputs();
+    $('#webform5387169000006544001').submit(function (e) {
+      var ismandatory = checkMandatory5387169000006544001();
+      e.preventDefault();
+      if(ismandatory){
+        if(typeof _wfa_track != 'undefined' && _wfa_track.wfa_submit){ _wfa_track.wfa_submit(e); }
+        var formData = new FormData(this);
+        $.ajax({
+          url :'https://crm.zoho.com/crm/WebToLeadForm',
+          type : 'POST',
+          data : formData,
+          cache: false,
+          contentType: false,
+          processData: false,
+          success: function(data) {
+            /* We don't need any of this */
+            /*
+            var splashinfodom = document.getElementById("wf_splash_info");
+            splashinfodom.innerText=data.actionvalue;
+            var splashdom = document.getElementById("wf_splash");
+            document.getElementById("webform5387169000006544001").reset.click();
+            splashdom.style.display = '';
+            setTimeout(function(){
+              splashdom.style.display = 'none';
+            },5000);
+            */
+
+            // Hide form, show thank you message.
+            $('#form-wrapper').css('display', 'none');
+            $('#form-completed').fadeIn("slow");
+            console.log("form submitted");
+            document.querySelector('.crmWebToEntityForm .formsubmit').removeAttribute('disabled');
+          },
+          error: function(data){
+            //alert("an error occurred");
+            console.log("an error occurred");
+          }
+        });
+      }
+    });
+  };
+
+  /**
+   * Zoho tooltip.
+   */
+  function tooltipShow5387169000006544001(el){
+    var tooltip = el.nextElementSibling;
+    var tooltipDisplay = tooltip.style.display;
+    if(tooltipDisplay == 'none'){
+      var allTooltip = document.getElementsByClassName('zcwf_tooltip_over');
+      for(i=0; i<allTooltip.length; i++){
+        allTooltip[i].style.display='none';
+      }
+      tooltip.style.display = 'block';
+    }else{
+      tooltip.style.display='none';
+    }
+  };
+
+  /* == == */
+
+  // Ready event
+  $( document ).ready(function() {
+
+    enableMobileMenu();
+    //readyForm();
+    readyZohoForm();
+
+  });
+
+})( jQuery );
+</script>
+
+<!-- END: Zoho form -->
