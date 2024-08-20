@@ -1,0 +1,2870 @@
+<!-- Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+.btn i.bi {
+  font-size: 20px;
+  vertical-align: middle;
+}
+.btn-solid {
+  font-family: 'ProximaNova-bold', Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  color: #fff;
+  padding: 10px 30px;
+  border: 2px solid #04BF20;
+  border-radius: 25px;
+  background: #04BF20;
+  transition: all 0.15s ease-in-out;
+}
+.btn-solid:hover {
+  color: #fff;
+  background-color: #029c19;
+  border-color: #029c19;
+  text-decoration: none;
+}
+
+.primary, .secondary, .tertiary, #main {
+  padding: 40px 0;
+}
+
+@media (min-width: 768px) {
+
+}
+@media (min-width: 768px) {
+  .primary, .secondary, .tertiary, #main {
+    padding: 80px 0;
+  }
+}
+
+@media (min-width: 1200px) {
+
+}
+
+.primary {
+  background-image: url(../../assets/_images/sit-standards-hero-background.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #14373f;
+  color: #fff;
+}
+.primary h1 {
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.primary p {
+  font-size: 20px;
+}
+.primary img, .secondary img, .tertiary img {
+  width: 100%;
+  height: auto;
+}
+
+@media (min-width: 768px) {
+  .primary h1 {
+    font-size: 40px;
+  }
+  .primary p {
+    font-size: 24px;
+  }
+}
+@media (min-width: 992px) {
+  .primary .text-side {
+    padding-right: 25px;
+  }
+}
+
+.sit-subnav {
+  position: fixed;
+  top: -82px;
+  width: 100%;
+  padding: 10px 0;
+  transition: all 0.15s ease-in-out;
+}
+.sit-subnav.is-visible {
+  top: 0;
+  box-shadow: 0 5px 25px rgba(0,0,0,.2);
+}
+.sit-subnav li {
+  margin-bottom: 0;
+}
+@media (max-width: 767px) {
+  .sit-subnav {
+    display: none;
+  }
+}
+
+.secondary, .sit-subnav {
+  background-color: #f2f2f2;
+}
+.secondary p {
+  font-size: 22px;
+}
+.secondary ul {
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+.secondary ul li, ul.sit-subnav li {
+  display: inline-block;
+  margin: 0 20px;
+}
+.secondary ul li a, ul.sit-subnav li a {
+  font-family: 'Gilroy-semibold', Helvetica, Arial, sans-serif;
+  font-size: 20px;
+  color: #2d2d2d;
+  text-decoration: none;
+  display: block;
+  padding: 20px 40px;
+  border-radius: 25px;
+  background: transparent;
+  transition: all 0.15s ease-in-out;
+}
+ul.sit-subnav li a {
+  padding: 14px 28px;
+}
+.secondary ul li a:hover, ul.sit-subnav li a:hover, ul.sit-subnav li a.active {
+  background: #fafafa;
+}
+.secondary ul li a img, ul.sit-subnav li a img {
+  max-width: 82px;
+  display: block;
+  margin: 0 auto 2rem;
+}
+ul.sit-subnav li a img {
+  max-width: 32px;
+  display: inline-block;
+  margin: 0;
+  margin-right: 12px;
+}
+
+/* Get rid of defauly 'blue' color of bootstrap nav when on 'focus' */
+.nav-link:focus, .nav-link:hover {
+  color: inherit;
+}
+
+@media (min-width: 768px) {
+  .secondary p {
+    font-size: 28px;
+  }
+  .secondary ul li {
+    margin: 0 40px;
+  }
+  .secondary ul li a {
+    font-size: 22px;
+  }
+}
+
+.tertiary {
+  background-color: #fff7f0;
+}
+
+@media (max-width: 767px) {
+  .tertiary img {
+    margin-top: 20px;
+  }
+}
+
+.accordion-button, .accordion-body, .table {
+  font-size: 14px;
+  line-height: 16px;
+}
+@media (min-width: 768px) {
+  .accordion-button, .accordion-body, .table {
+    font-size: 16px;
+    line-height: 18px;
+  }
+}
+@media (min-width: 992px) {
+  .accordion-button, .accordion-body, .table {
+    font-size: 18px;
+    line-height: 21px;
+  }
+}
+.table {
+  min-width: 1140px; /* To force table to scroll-x at smaller breaks, with .table-responsive class */
+  margin-bottom: 0;
+}
+.table>:not(:first-child) {
+  border-top: 2px solid currentColor;
+  border-top: 0;
+}
+.table>:not(caption)>*>* {
+  padding: 14px 10px;
+  background-color: transparent; /* so row colors can come through */
+  box-shadow: none;
+  /* border-color: #97b9af; */
+  border-color: #D3D3D3;
+}
+.table-sm>:not(caption)>*>* {
+  padding: 5px 10px;
+}
+.js-trigger {
+  cursor: pointer;
+}
+.table i.bi {
+  font-size: 14px;
+}
+.tooltip {}
+.tooltip-inner {
+  font-size: 14px;
+  padding: 10px;
+  max-width: 400px;
+}
+.bi-plus-square, .bi-dash-square {
+  display: none;
+}
+.js-trigger.collapsed .bi-plus-square {
+  display: inline-block;
+}
+.js-trigger:not(.collapsed) .bi-dash-square {
+  display: inline-block;
+}
+/* tr.js-trigger.collapsed .bi-dash-square {
+  display: none;
+} */
+thead > tr > th {
+  font-family: 'ProximaNova-bold', Helvetica, Arial, sans-serif;
+  font-weight: normal;
+  /* padding-bottom: 0.5rem !important; */
+  /* background: #c0c0c0 !important; */
+  background: #fff !important;
+  border-bottom-width: 3px !important;
+  border-bottom-style: solid !important;
+  border-bottom-color: #04BF20 !important;
+}
+tbody > tr > th {
+  font-weight: normal;
+  white-space: nowrap;
+}
+tbody > tr > th::before {
+  display: inline-block;
+  font-family: bootstrap-icons !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* vertical-align: -0.125em; */
+  -webkit-font-smoothing: antialiased;
+  content: "";
+  font-size: 12px;
+  font-weight: 700 !important;
+  width: 12px;
+  height: 12px;
+  margin-right: 10px;
+  color: #000;
+}
+@media (min-width: 768px) {
+  tbody > tr > th::before {
+    font-size: 13px;
+    width: 13px;
+    height: 13px;
+  }
+}
+@media (min-width: 992px) {
+  tbody > tr > th::before {
+    font-size: 14px;
+    width: 14px;
+    height: 14px;
+  }
+}
+tbody > tr.js-trigger.collapsed > th::before {
+  content: "\f4fd"; /* closed (plus) */
+}
+tbody > tr.js-trigger:not(.collapsed) > th::before {
+  content: "\f2e9"; /* open (dash) */
+}
+
+/* Table colors --
+
+#16373e / #14373f -- 1st -- This is reserved for category, not used in tables
+#347169 / #317169 -- 2nd
+#408a73 / #3d8a73 -- 3rd
+#4ea27a / #4aa379 -- 4th
+
+= Going back to grayscale
+
+Borders: #D3D3D3;
+First: #E0E0E0;
+Second: #F0F0F0;
+Third: #FFFFFF;
+
+*/
+
+tbody > tr {
+  /* first level, darkest color */
+  /* color: #fff;
+  background-color: #317169; */
+  color: #2d2d2d;
+  background-color: #E0E0E0;
+}
+tbody > tr > td > div > table > tbody > tr {
+  /* second level, lighter color */
+  /* color: #fff;
+  background-color: #3d8a73; */
+  color: #2d2d2d;
+  background-color: #F0F0F0;
+}
+tbody > tr > td > div > table > tbody > tr > td > div > table > tbody > tr {
+  /* third level, lightest color */
+  /* color: #fff;
+  background-color: #4aa379; */
+  color: #2d2d2d;
+  background-color: #FFFFFF;
+}
+div.table-responsive-xl {
+  margin-bottom: 10px;
+}
+
+/* Bullshit overrides due to Bootstrap */
+
+body {
+  background-color: var(--black);
+  color: #333;
+  padding-top: 0;
+  font-family: Proximanova, sans-serif;
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.navbar {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.navbar > .container {
+  display: block;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+#hero > .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+h1 {
+  font-family: Gilroy, sans-serif;
+  font-weight: 700;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-family: Gilroy, sans-serif;
+  font-weight: 700;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+h3 {
+  font-family: 'Gilroy-semibold', Helvetica, Arial, sans-serif;
+  color: #808080;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+p {
+  font-family: Proximanova, sans-serif;
+  margin-bottom: 20px;
+}
+
+a {
+  color: #04bf20;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #04bf20;
+}
+
+.btn-green--solid:hover {
+  color: #fff;
+}
+
+@media (min-width: 768px) {
+  h1 {
+    font-size: 42px;
+    line-height: 44px;
+  }
+  h2 {
+    font-size: 32px;
+    line-height: 36px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  p {
+    font-family: Proximanova, sans-serif;
+    font-size: 18px;
+  }
+}
+
+/* Mobile overrides */
+@media (max-width: 767px) {
+
+}
+
+</style>
+
+<!-- Start tables -->
+
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 id="environmental">Environmental</h2>
+<h3>Energy (100) &mdash; Function-focused</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col" style="width: 13%;">SIT Code</th>
+        <th scope="col" style="width: 8%;">Type</th>
+        <th scope="col">Description</th>
+        <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOnetenSub" aria-expanded="false" aria-controls="efOnetenSub">
+        <th scope="row">SIT EF 110</th>
+        <td>Topic</td>
+        <td>Technology infrastructure energy consumption (include electricity, heating, cooling) <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., CPUs, monitors, desktops, laptops/notebooks, tablets, routers, printers, smartphones, desktop phones, servers, applications portfolio)"></i></td>
+        <td>GRI 302-1, 3; SASB TC-IM-130a.1, TC-SI-130a.1; ESRS E1; SDG 7, 9, 13, 17<br><br>SDG Ambition Benchmark: Science-based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="p-0 border-bottom-0">
+          <div class="collapse" id="efOnetenSub">
+            <table class="table">
+              <tbody>
+                <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOnetenoneSub" aria-expanded="false" aria-controls="efOnetenoneSub">
+                  <th scope="row" style="width: 13%;">SIT EF 110-1</th>
+                  <td style="width: 8%;">Platform</td>
+                  <td>Owned/on-premises</td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="p-0 border-bottom-0">
+                    <div class="collapse" id="efOnetenoneSub">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <th scope="row" style="width: 13%;">SIT EF 110-1.a</th>
+                            <td style="width: 8%;">Metric</td>
+                            <td>kWh consumption by location, time of day, per end user (include EF 111-1.a, 112-1, 113-1.a)</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 110-1.b</th>
+                            <td>Metric</td>
+                            <td>Percentage renewable <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOnetentwoSub" aria-expanded="false" aria-controls="efOnetentwoSub">
+                  <th scope="row" style="width: 13%;">SIT EF 110-2</th>
+                  <td style="width: 8%;">Platform</td>
+                  <td>Third party-sourced or public cloud-hosted <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., hardware, applications, PaaS)"></i></td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="p-0 border-bottom-0">
+                    <div class="collapse" id="efOnetentwoSub">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <th scope="row" style="width: 13%;">SIT EF 110-2.a</th>
+                            <td style="width: 8%;">Metric</td>
+                            <td>kWh consumption by location, time of day, per end user (include EF 111-2.a, 113-2.a)</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 110-2.b</th>
+                            <td>Metric</td>
+                            <td>Percentage renewable <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOneElevenSub" aria-expanded="false" aria-controls="efOneElevenSub">
+        <th scope="row">SIT EF 111</th>
+        <td>Topic</td>
+        <td>Data center energy consumption (include electricity, heating, cooling)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="p-0 border-bottom-0">
+          <div class="collapse" id="efOneElevenSub">
+            <table class="table">
+              <tbody>
+                <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOneElevenOneSub" aria-expanded="false" aria-controls="efOneElevenOneSub">
+                  <th scope="row" style="width: 13%;">SIT EF 111-1</th>
+                  <td style="width: 8%;">Platform</td>
+                  <td>Owned/on-premises</td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="p-0 border-bottom-0">
+                    <div class="collapse" id="efOneElevenOneSub">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <th scope="row" style="width: 13%;">SIT EF 111-1.a</th>
+                            <td style="width: 8%;">Metric</td>
+                            <td>kWh rack power consumption by location, room, time of day, per end user</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 111-1.b</th>
+                            <td>Metric</td>
+                            <td>Percentage renewable <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 111-1.c</th>
+                            <td>Metric</td>
+                            <td>ekWh per capita (end user) <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="A standard unit of energy consumption used to compare energy sources."></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 111-1.d</th>
+                            <td>Metric</td>
+                            <td>Power usage efficiency (PUE) <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(I.e., total facility energy / IT equipment energy)"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 111-1.e</th>
+                            <td>Metric</td>
+                            <td>Percentage data centers complying with EU Data Centre Code of Conduct</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOneElevenTwoSub" aria-expanded="false" aria-controls="efOneElevenTwoSub">
+                  <th scope="row" style="width: 13%;">SIT EF 111-2</th>
+                  <td style="width: 8%;">Platform</td>
+                  <td>Third party-sourced or public cloud-hosted <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., hardware, applications, PaaS)"></i></td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="p-0 border-bottom-0">
+                    <div class="collapse" id="efOneElevenTwoSub">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <th scope="row" style="width: 13%;">SIT EF 111-2.a</th>
+                            <td style="width: 8%;">Metric</td>
+                            <td>kWh consumption by location, room, time of day, per end user</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 111-2.b</th>
+                            <td>Metric</td>
+                            <td>Percentage renewable <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 111-2.c</th>
+                            <td>Metric</td>
+                            <td>ekWh per capita (end user) <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="A standard unit of energy consumption used to compare energy sources."></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 111-2.d</th>
+                            <td>Metric</td>
+                            <td>Power usage efficiency (PUE) <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(I.e., total facility energy / IT equipment energy)"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 111-2.e</th>
+                            <td>Metric</td>
+                            <td>Percentage data centers complying with EU Data Centre Code of Conduct</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">SIT EF 111-3</th>
+                  <td>Metric</td>
+                  <td>Percentage data center workloads that are portable <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., containers)"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOneTwelveSub" aria-expanded="false" aria-controls="efOneTwelveSub">
+        <th scope="row">SIT EF 112</th>
+        <td>Topic</td>
+        <td>End-user devices energy consumption (include electricity, heating, cooling) <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., laptops/notebooks, tablets, smartphones, desk phones)"></i></td>
+        <td>ESRS E1; SDG 7, 9, 13, 17<br><br>SDG Ambition Benchmark: Science-based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="p-0 border-bottom-0">
+          <div class="collapse" id="efOneTwelveSub">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row" style="width: 13%;">SIT EF 112-1</th>
+                  <td style="width: 8%;">Metric</td>
+                  <td>kWh consumption by location <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., on-premises, remote, time of day, per device, per end user)"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">SIT EF 112-2</th>
+                  <td>Metric</td>
+                  <td>Percentage renewable <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOneThirteenSub" aria-expanded="false" aria-controls="efOneThirteenSub">
+        <th scope="row">SIT EF 113</th>
+        <td>Topic</td>
+        <td>Application portfolio energy consumption (average workloads)</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td colspan="4" class="p-0 border-bottom-0">
+          <div class="collapse" id="efOneThirteenSub">
+            <table class="table">
+              <tbody>
+                <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOneThirteenOneSub" aria-expanded="false" aria-controls="efOneThirteenOneSub">
+                  <th scope="row" style="width: 13%;">SIT EF 113-1</th>
+                  <td style="width: 8%;">Platform</td>
+                  <td>Owned/on-premises</td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="p-0 border-bottom-0">
+                    <div class="collapse" id="efOneThirteenOneSub">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <th scope="row" style="width: 13%;">SIT EF 113-1.a</th>
+                            <td style="width: 8%;">Metric</td>
+                            <td>kWh consumption by location, room, time of day, per end user</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 113-1.b</th>
+                            <td>Metric</td>
+                            <td>kWh consumption for software updates</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 113-1.c</th>
+                            <td>Metric</td>
+                            <td>Percentage portfolio on renewable energy <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 113-1.d</th>
+                            <td>Metric</td>
+                            <td>Percentage development following green design and code practices</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+                <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOneThirteenTwoSub" aria-expanded="false" aria-controls="efOneThirteenTwoSub">
+                  <th scope="row" style="width: 13%;">SIT EF 113-2</th>
+                  <td style="width: 8%;">Platform</td>
+                  <td>Third party-sourced or public cloud-hosted <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., hardware, applications, PaaS)"></i></td>
+                </tr>
+                <tr>
+                  <td colspan="3" class="p-0 border-bottom-0">
+                    <div class="collapse" id="efOneThirteenTwoSub">
+                      <table class="table">
+                        <tbody>
+                          <tr>
+                            <th scope="row" style="width: 13%;">SIT EF 113-2.a</th>
+                            <td style="width: 8%;">Metric</td>
+                            <td>kWh consumption by location, room, time of day, per end user</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 113-2.b</th>
+                            <td>Metric</td>
+                            <td>kWh consumption for software updates</td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 113-2.c</th>
+                            <td>Metric</td>
+                            <td>Percentage portfolio on renewable energy <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+                          </tr>
+                          <tr>
+                            <th scope="row">SIT EF 113-2.d</th>
+                            <td>Metric</td>
+                            <td>Percentage portfolio delivered by third parties</td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">SIT EF 113-3</th>
+                  <td>Metric</td>
+                  <td>Percentage using containers, microservices, serverless</td>
+                </tr>
+                <tr>
+                  <th scope="row">SIT EF 113-4</th>
+                  <td>Metric</td>
+                  <td>Number applications per end user</td>
+                </tr>
+                <tr>
+                  <th scope="row">SIT EF 113-5</th>
+                  <td>Metric</td>
+                  <td>Percentage portfolio green coded</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOnetwentySub" aria-expanded="false" aria-controls="efOnetwentySub">
+        <th scope="row">SIT EF 120</th>
+        <td>Metric</td>
+        <td>Percentage workloads cloud hosted <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., applications, storage, data processing capacity, cybersecurity)"></i></td>
+        <td>SASB TC-SI-000.A</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="p-0 border-bottom-0">
+          <div class="collapse" id="efOnetwentySub">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row" style="width: 13%;">SIT EF 120-1</th>
+                  <td style="width: 8%;">Metric</td>
+                  <td>Percentage cloud-hosted by provider</td>
+                </tr>
+                <tr>
+                  <th scope="row">SIT EF 120-2</th>
+                  <td>Metric</td>
+                  <td>Percentage on renewable energy <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOnethirtySub" aria-expanded="false" aria-controls="efOnethirtySub">
+        <th scope="row">SIT EF 130</th>
+        <td>Metric</td>
+        <td>Lifecycle energy consumption IT products and services (include electricity, heating, cooling) <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., application operations, messaging and collaboration, service desk, security, networks and connectivity)"></i></td>
+        <td>GRI 302-1, 3; ESRS E1; SDG 7, 9, 13, 17<br><br>SDG Ambition Benchmark: Science-based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="p-0 border-bottom-0">
+          <div class="collapse" id="efOnethirtySub">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row" style="width: 13%;">SIT EF 130-1</th>
+                  <td style="width: 8%;">Metric</td>
+                  <td>Percentage products and services having an extraordinarily high workload</td>
+                </tr>
+                <tr>
+                  <th scope="row">SIT EF 130-2</th>
+                  <td>Metric</td>
+                  <td>Percentage products and services on renewable energy <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+                </tr>
+                <tr>
+                  <th scope="row">SIT EF 130-3</th>
+                  <td>Metric</td>
+                  <td>Percentage eligible products and services hosted/delivered by third parties</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+      <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efOnefortySub" aria-expanded="false" aria-controls="efOnefortySub">
+        <th scope="row">SIT EF 140</th>
+        <td>Topic</td>
+        <td>Energy sourcing</td>
+        <td>SDG 7, 9, 13, 17<br><br>Science-based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+      </tr>
+      <tr>
+        <td colspan="4" class="p-0 border-bottom-0">
+          <div class="collapse" id="efOnefortySub">
+            <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row" style="width: 13%;">SIT EF 140-1</th>
+                  <td style="width: 8%;">Metric</td>
+                  <td>Percentage of energy sources controlled/influenced</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>&nbsp;</p>
+<h3>Energy (100) &mdash; Enterprise-focused</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeOnetenSub" aria-expanded="false" aria-controls="eeOnetenSub">
+      <th scope="row">SIT EE 110</th>
+      <td>Topic</td>
+      <td>Enterprise facility energy consumption</td>
+      <td>GRI 302-1, 2, 3; ESRS E1; SDG 7, 9, 13, 17<br><br>Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeOnetenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 110-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>kWH consumption by location, time of day, facility, m<sup>2</sup></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 110-2</th>
+                <td>Metric</td>
+                <td>Percentage renewable <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 110-3</th>
+                <td>Metric</td>
+                <td>Percentage m<sup>2</sup> certified green <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., in LEED-certified buildings)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeOnetwentySub" aria-expanded="false" aria-controls="eeOnetwentySub">
+      <th scope="row">SIT EE 120</th>
+      <td>Topic</td>
+      <td>Hybrid workforce enablement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeOnetwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 120-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>kWH consumption by location, ratio of remote to office workers</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 120-2</th>
+                <td>Metric</td>
+                <td>Percentage renewable <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeOnethirtySub" aria-expanded="false" aria-controls="eeOnethirtySub">
+      <th scope="row">SIT EE 130</th>
+      <td>Topic</td>
+      <td>Manufacturing energy consumption</td>
+      <td>GRI 302-1, 2, 3</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeOnethirtySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 130-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>kWH consumption by location, time of day, facility, m<sup>2</sup></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 130-2</th>
+                <td>Metric</td>
+                <td>Percentage renewable <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., solar, wind, geothermal, hydropower, tidal, biomass)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 130-3</th>
+                <td>Metric</td>
+                <td>Percentage m<sup>2</sup> certified green <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., in LEED-certified buildings)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeOnefortySub" aria-expanded="false" aria-controls="eeOnefortySub">
+      <th scope="row">SIT EE 140</th>
+      <td>Topic</td>
+      <td>Energy sourcing</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeOnefortySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 140-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage of energy sources controlled/influenced</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<h3>Emissions (200) &mdash; Function-focused</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efTwoTenSub" aria-expanded="false" aria-controls="efTwoTenSub">
+      <th scope="row">SIT EF 210</th>
+      <td>Topic</td>
+      <td>Technology infrastructure emissions</td>
+      <td>GRI 305-1, 2, 3; SASB TC-IM-130a.1, TC-SI-130a.1; ESRS E1, E2; SDG 7, 9, 13, 17<br><br>SDG Ambition Benchmark: Science-based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efTwoTenSub">
+          <table class="table">
+            <tbody>
+              <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efTwoTenOneSub" aria-expanded="false" aria-controls="efTwoTenOneSub">
+                <th scope="row" style="width: 13%;">SIT EF 210-1</th>
+                <td style="width: 8%;">Platform</td>
+                <td>Owned/on-premises</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="p-0 border-bottom-0">
+                  <div class="collapse" id="efTwoTenOneSub">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <th scope="row" style="width: 13%;">SIT EF 210-1.a</th>
+                          <td style="width: 8%;">Metric</td>
+                          <td>Metric tons CO<sup>2</sup> by location, over time period, per end user (include SIT EF 211-1, 212-1, 213-1)</td>
+                          <td>GRI 305-1, 2</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SIT EF 210-1.b</th>
+                          <td>Metric</td>
+                          <td>GHG intensity <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(I.e., IT-specific missions per unit of economic value, for the enterprise this is revenue or product produced, for IT this may be MIPS)"></i></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+              <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efTwoTenTwoSub" aria-expanded="false" aria-controls="efTwoTenTwoSub">
+                <th scope="row" style="width: 13%;">SIT EF 210-2</th>
+                <td style="width: 8%;">Platform</td>
+                <td>Third party-sourced or public cloud-hosted</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="p-0 border-bottom-0">
+                  <div class="collapse" id="efTwoTenTwoSub">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <th scope="row" style="width: 13%;">SIT EF 210-2.a</th>
+                          <td style="width: 8%;">Metric</td>
+                          <td>Metric tons CO<sup>2</sup> by location, over time period, per end user (include EF 211-2, 213-2)</td>
+                          <td>GRI 305-3</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">SIT EF 210-2.b</th>
+                          <td>Metric</td>
+                          <td>GHG intensity intensity <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(IT-specific emissions per unit of economic value; for the enterprise, this is revenue or product produced; for IT, this may be MIPS)"></i></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efTwoElevenSub" aria-expanded="false" aria-controls="efTwoElevenSub">
+      <th scope="row">SIT EF 211</th>
+      <td>Topic</td>
+      <td>Data center emissions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efTwoElevenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 211-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Owned/on-premises (include servers and cooling) metric tons CO<sub>2</sub> by location, time of day, per end user</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 211-2</th>
+                <td>Metric</td>
+                <td>Third party-hosted and co-location data centers metric tons CO<sub>2</sub> by provider, per end user</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efTwoTwelveSub" aria-expanded="false" aria-controls="efTwoTwelveSub">
+      <th scope="row">SIT EF 212</th>
+      <td>Topic</td>
+      <td>End-user devices emissions <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., laptops/notebooks, tablets, smartphones, desk phones)"></i></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efTwoTwelveSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 212-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Metric tons CO<sub>2</sub> by location, over time period, per end user</td>
+              </tr>
+              <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efTwoTwelveTwoSub" aria-expanded="false" aria-controls="efTwoTwelveTwoSub">
+                <th scope="row">SIT EF 212-2</th>
+                <td>Metric</td>
+                <td>Average lifecycle of end-user devices by type, location, user category</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="p-0 border-bottom-0">
+                  <div class="collapse" id="efTwoTwelveTwoSub">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <th scope="row" style="width: 13%;">SIT EF 212-2.a</th>
+                          <td style="width: 8%;">Metric</td>
+                          <td>Average emissions reduction achieved by lifecycle extension by type</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 212-3</th>
+                <td>Metric</td>
+                <td>Percentage end-user devices BYOD</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efTwoThirteenSub" aria-expanded="false" aria-controls="efTwoThirteenSub">
+      <th scope="row">SIT EF 213</th>
+      <td>Topic</td>
+      <td>Application portfolio emissions (average workloads)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efTwoThirteenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 213-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Owned/on-premises metric tons CO<sub>2</sub> by portfolio, location</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 213-2</th>
+                <td>Metric</td>
+                <td>Third party-sourced or public cloud-hosted metric tons CO<sub>2</sub> by provider</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efTwoTwentySub" aria-expanded="false" aria-controls="efTwoTwentySub">
+      <th scope="row">SIT EF 220</th>
+      <td>Topic</td>
+      <td>Lifecycle emissions IT products and services (include electricity, heating, cooling) <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., application operations, messaging and collaboration, service desk, security, networks and connectivity)"></i></td>
+      <td>GRI 305-1, 2, 3; SASB TC-IM-130a.1, TC-SI-130a.1; ESRS E1, E2; SDG 7, 9, 13, 17<br><br>SDG Ambition Benchmark: Science-based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efTwoTwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 220-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Metric tons of CO<sub>2</sub> by product or service</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<h3>Emissions (200) &mdash; Enterprise-focused</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeTwoTenSub" aria-expanded="false" aria-controls="eeTwoTenSub">
+      <th scope="row">SIT EE 210</th>
+      <td>Topic</td>
+      <td>Virtual meetings enablement</td>
+      <td>ESRS E1, E2; SDG 7, 9, 13, 17<br><br>Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeTwoTenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 210-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Metric tons CO<sub>2</sub> from meeting travel by number miles, number trips, per employee</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 210-2</th>
+                <td>Metric</td>
+                <td>Metric tons CO<sub>2</sub> saved/avoided per FTE, over time period enabled by virtual meeting tools and capabilities</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 210-3</th>
+                <td>Metric</td>
+                <td>Percentage major corporate meetings virtual</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeTwoTwentySub" aria-expanded="false" aria-controls="eeTwoTwentySub">
+      <th scope="row">SIT EE 220</th>
+      <td>Topic</td>
+      <td>Enterprise facility emissions</td>
+      <td>GRI 305-1, 2, 3; ESRS E1, E2; SDG 7, 9, 13, 17<br><br>Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeTwoTwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 220-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Metric tons CO<sub>2</sub> by location, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 220-2</th>
+                <td>Metric</td>
+                <td>GHG intensity <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(Facility emissions per unit of economic value; for the enterprise,
+                this is revenue or product produced)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 220-3</th>
+                <td>Metric</td>
+                <td>Percentage smart office space <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(smart, green building space)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeTwoThirtySub" aria-expanded="false" aria-controls="eeTwoThirtySub">
+      <th scope="row">SIT EE 230</th>
+      <td>Topic</td>
+      <td>Eco-friendly business travel</td>
+      <td>GRI 305-3; ESRS E1, E2; SDG 7, 12, 13, 17<br><br>Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeTwoThirtySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 230-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage efficient travel <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(Kilometers, trips per FTE)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeTwoFortySub" aria-expanded="false" aria-controls="eeTwoFortySub">
+      <th scope="row">SIT EE 240</th>
+      <td>Topic</td>
+      <td>Enterprise transportation Scope 1 emissions <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(I.e., enterprise direct use of road, rail, air, marine; Scope 2, 3 are included in procurement and supply-chain emissions)"></i></td>
+      <td>GRI 305-1; SASB TR-RO-110a, TR-MT-110a, TR-RA-110a, TR-AF-110a; ESRS E1, E2; SDG 7, 9, 13, 17<br><br>Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeTwoFortySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 240-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Metric tons CO<sub>2</sub>, by location, mode, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 240-2</th>
+                <td>Metric</td>
+                <td>Percentage fleet electric and hybrid</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeTwoFiftySub" aria-expanded="false" aria-controls="eeTwoFiftySub">
+      <th scope="row">SIT EE 250</th>
+      <td>Topic</td>
+      <td>Procurement Scope 2 and 3 emissions <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., purchasing, shipping, transport)"></i></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeTwoFiftySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 250-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Metric tons CO<sub>2</sub> per unit procured, by item type, provider, location, over time period</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeTwoSixtySub" aria-expanded="false" aria-controls="eeTwoSixtySub">
+      <th scope="row">SIT EE 260</th>
+      <td>Topic</td>
+      <td>Enterprise supply-chain emissions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeTwoSixtySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 260-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Metric tons CO<sub>2</sub> by supply channel, item categories, stage (e.g., transport, storage)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeTwoSeventySub" aria-expanded="false" aria-controls="eeTwoSeventySub">
+      <th scope="row">SIT EE 270</th>
+      <td>Topic</td>
+      <td>Enterprise manufacturing emissions</td>
+      <td>GRI 305-1, 2, 3; ESRS E1, E2; SDG 7, 9, 12, 13, 17<br><br>Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeTwoSeventySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 270-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage processes automated <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., streamlined production cycle utilizing AI, IoT, RPA, etc.)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 270-2</th>
+                <td>Metric</td>
+                <td>Metric tons CO<sub>2</sub> by location, over time period</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<h3>Waste (300) &mdash; Function-focused</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efThreeTenSub" aria-expanded="false" aria-controls="efThreeTenSub">
+      <th scope="row">SIT EF 310</th>
+      <td>Topic</td>
+      <td>Device and hardware lifecycle circularity <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., servers, laptops, smartphones, desktop phones, monitors, printers, network equipment)"></i></td>
+      <td>GRI 306-3, 4, 5; SASB TC-HW-410a.4; ESRS E5; SDG 6, 12, 13, 17<br><br>
+        Zero Waste to Landfill and Incineration<br>
+        Zero Discharge of Hazardous Pollutants and Chemicals<br>
+        100% Sustainable Material Inputs are Renewable, Recyclable, Reusable<br>
+        100% Resource Recovery</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efThreeTenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 310-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage IT devices reused/refurbished or repurposed by type</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 310-2</th>
+                <td>Metric</td>
+                <td>Percentage IT devices recycled/remanufactured</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 310-3</th>
+                <td>Metric</td>
+                <td>Percentage equipment not disposed sustainably (i.e., landfilled)</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 310-4</th>
+                <td>Metric</td>
+                <td>Percentage device/hardware units donated responsibly by type, over time period <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(With assurances of downstream sustainable disposal)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 310-5</th>
+                <td>Metric</td>
+                <td>Refresh cycle of IT devices by type</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<h3>Waste (300) &mdash; Enterprise-focused</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeThreeTenOneSub" aria-expanded="false" aria-controls="eeThreeTenOneSub">
+      <th scope="row">SIT EE 310-1</th>
+      <td>Topic</td>
+      <td>Water consumption enterprise facilities (exclude manufacturing processes)</td>
+      <td>GRI 303-1, 2, 3, 4, 5; SASB TC-IM-130a.2, TC-SI-130a.2; ESRS E3; SDG 9, 12, 13, 17<br><br>
+        Net-positive Water Impact in Water-stressed Basins<br>
+        Zero Discharge of Hazardous Pollutants and Chemicals</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeThreeTenOneSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 310-1.a</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Megaliters withdrawn by location, water source, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 310-1.b</th>
+                <td>Metric</td>
+                <td>Percentage water withdrawn from high-stress regions</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 310-1.c</th>
+                <td>Metric</td>
+                <td>Baseline megaliters per facility m<sup>2</sup> over time period (e.g., a data center)</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 310-1.d</th>
+                <td>Metric</td>
+                <td>Megaliters discharged by location, water destination, level of treatment, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 310-1.e</th>
+                <td>Metric</td>
+                <td>Water intensity: megaliters per facility m<sup>2</sup> over time period (e.g., a data center)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeThreeTenTwoSub" aria-expanded="false" aria-controls="eeThreeTenTwoSub">
+      <th scope="row">SIT EE 310-2</th>
+      <td>Topic</td>
+      <td>Water consumption third-party facilities (exclude manufacturing processes)</td>
+      <td>GRI 303-1, 2, 3, 4, 5; SASB TC-IM-130a.2, TC-SI-130a.2; ESRS E3; SDG 9, 12, 13, 17<br><br>
+        Net-positive Water Impact in Water-stressed Basins<br>
+        Zero Discharge of Hazardous Pollutants and Chemicals</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeThreeTenTwoSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 310-2.a</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Megaliters withdrawn by location, water source, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 310-2.b</th>
+                <td>Metric</td>
+                <td>Percentage water withdrawn from high-stress regions</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 310-2.c</th>
+                <td>Metric</td>
+                <td>Baseline megaliters per facility m<sup>2</sup> over time period (e.g., a data center)</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 310-2.d</th>
+                <td>Metric</td>
+                <td>Megaliters discharged by location, water destination, level of treatment, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 310-2.e</th>
+                <td>Metric</td>
+                <td>Water intensity: megaliters per facility m<sup>2</sup> over time period (e.g., a data center)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeThreeTwentySub" aria-expanded="false" aria-controls="eeThreeTwentySub">
+      <th scope="row">SIT EE 320</th>
+      <td>Topic</td>
+      <td>Paperless enterprise enablement</td>
+      <td>SDG 12<br><br>
+        Zero Waste to Landfill and Incineration<br>
+        Zero Discharge of Hazardous Pollutants and Chemicals</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeThreeTwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 320-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage enterprise electronic processes <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., transactional, operational, archiving, other document management)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeThreeThirtySub" aria-expanded="false" aria-controls="eeThreeThirtySub">
+      <th scope="row">SIT EE 330</th>
+      <td>Topic</td>
+      <td>Manufacturing waste reduction (include enterprise-owned and contracted)</td>
+      <td>GRI 301-2,3; GRI 303-3, 4; SASB TC-IM-130a.2; TC-SI-130a; ESRS E3, E5; SDG 6, 9, 12, 13, 17<br><br>
+        Zero Waste to Landfill and Incineration<br>
+        Zero Discharge of Hazardous Pollutants and Chemicals<br>
+        100% Sustainable Material Inputs are Renewable, Recyclable, Reusable<br>
+        Land Degradation Neutrality, Including Zero Deforestation</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeThreeThirtySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 330-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage materials sourced sustainably <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="Carbon product footprint, ecolabel/energy certifications, renewable energy use, (solar, wind, geothermal, hydropower, tidal, biomass), GHG emissions, low-carbon fuels/electric vehicles in fleet, product lifespan, commitment to recycled material in product/packaging, waste reduction, and compliance with government rules and directives."></i></td>
+                <td style="width: 30%;">GRI 301-2, 3</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 330-2</th>
+                <td>Metric</td>
+                <td>Metric tons materials not recycled (landfilled)</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 330-3</th>
+                <td>Metric</td>
+                <td>Megaliters withdrawn by location, over time period</td>
+                <td>GRI 303-3; SASB TC-IM-130a.2, TC-SI-130a</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 330-4</th>
+                <td>Metric</td>
+                <td>Percentage water withdrawn from high-stress regions</td>
+                <td></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 330-5</th>
+                <td>Metric</td>
+                <td>Megaliters discharged by location, water destination, level of treatment, over time period</td>
+                <td>GRI 303-4; SASB TC-IM-130a.2, TC-SI-130a</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 330-6</th>
+                <td>Metric</td>
+                <td>Percentage electronic waste disposal complying with EU WEEE Directive</td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<h3>Sourcing (400) &mdash; Function-focused</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efFourTenSub" aria-expanded="false" aria-controls="efFourTenSub">
+      <th scope="row">SIT EF 410</th>
+      <td>Topic</td>
+      <td>Software sourced sustainably <i class="bi bi-info-circle" data-bs-html="true" data-bs-toggle="tooltip" data-bs-title="Sourcing E-sustainability criteria categories:  Energy, transportation, waste, packaging<br><br>Criteria for sustainability within above categories: Carbon product footprint, ecolabel/energy certifications, renewable energy use, (solar, wind, geothermal, hydropower, tidal, biomass), GHG emissions, low-carbon fuels/electric vehicles in fleet, product lifespan, commitment to recycled material in product/packaging, waste reduction, and compliance with government rules and directives."></i></td>
+      <td>GRI 308-1, 2; SDG 9, 13, 17<br><br>
+        Zero Waste to Landfill and Incineration<br>
+        100% Sustainable Material Inputs are Renewable, Recyclable, Reusable<br>
+        Science-based Emissions Reduction in Line With a 1.5-Degree Celsius<br>
+        (Hardware) Land Degradation Neutrality, Including Zero Deforestation</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efFourTenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 410-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage vendors meeting requirements; also percentage requirements met by each primary vendor</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 410-2</th>
+                <td>Metric</td>
+                <td>Percentage software licenses or instances sourced sustainably</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 410-3</th>
+                <td>Metric</td>
+                <td>Percentage total spend to sustainable sources</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efFourTwentySub" aria-expanded="false" aria-controls="efFourTwentySub">
+      <th scope="row">SIT EF 420</th>
+      <td>Topic</td>
+      <td>Hardware and devices sourced sustainably <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(I.e., vendors, manufacturers and supply chain)"></i></td>
+      <td>GRI 308-1, 2; SDG 9, 13, 17<br><br>
+        Zero Waste to Landfill and Incineration<br>
+        100% Sustainable Material Inputs are Renewable, Recyclable, Reusable<br>
+        Science-based Emissions Reduction in Line With a 1.5-Degree Celsius<br>
+        (Hardware) Land Degradation Neutrality, Including Zero Deforestation</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efFourTwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 420-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage installed base sourced sustainably</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 420-2</th>
+                <td>Metric</td>
+                <td>Percentage new purchases sourced sustainably over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 420-3</th>
+                <td>Metric</td>
+                <td>Percentage total spend to sustainable sources</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efFourThirtySub" aria-expanded="false" aria-controls="efFourThirtySub">
+      <th scope="row">SIT EF 430</th>
+      <td>Topic</td>
+      <td>Certified devices/hardware <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(ENERGY STAR®, EPEAT, and/or TCO)"></i></td>
+      <td>GRI 308-1, 2; SASB TC-HW-410a.3; SDG 7, 9, 13<br><br>Science-based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efFourThirtySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 430-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage eligible technology devices/hardware meeting ENERGY STAR®, EPEAT, and/or TCO Certified criteria</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efFourFortySub" aria-expanded="false" aria-controls="efFourFortySub">
+      <th scope="row">SIT EF 440</th>
+      <td>Topic</td>
+      <td>IT procurement process sustainability</td>
+      <td>GRI 204; SDG 7, 9, 13, 17<br><br>
+        Zero Waste to Landfill and Incineration<br>
+        100% Sustainable Material Inputs are Renewable, Recyclable, Reusable<br>
+        Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efFourFortySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 440-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage IT purchases utilizing channels/processes optimized for sustainability over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 440-2</th>
+                <td>Metric</td>
+                <td>Percentage IT procurement spend utilizing channels/processes optimized for sustainability over time period</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efFourFiftySub" aria-expanded="false" aria-controls="efFourFiftySub">
+      <th scope="row">SIT EF 450</th>
+      <td>Topic</td>
+      <td>Outsourcer sustainably</td>
+      <td>GRI 308-1, 2; SDG 17</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efFourFiftySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 450-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage vendors meeting requirements; also percentage requirements met by each primary vendor</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 450-2</th>
+                <td>Metric</td>
+                <td>Percentage outsourcing sourced sustainably</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efFourSixtySub" aria-expanded="false" aria-controls="efFourSixtySub">
+      <th scope="row">SIT EF 460</th>
+      <td>Topic</td>
+      <td>Infrastructure services sourced sustainably <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., cloud, data centers, e-commerce services)"></i></td>
+      <td>GRI 308-1, 2; SASB CG-EC-130a.1, 2, 3; SDG 17</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efFourSixtySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 460-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage vendors meeting requirements; also percentage requirements met by each primary vendor</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 460-2</th>
+                <td>Metric</td>
+                <td>Percentage third party-hosted workloads sourced sustainably by type, total spend</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efFourSeventySub" aria-expanded="false" aria-controls="efFourSeventySub">
+      <th scope="row">SIT EF 470</th>
+      <td>Topic</td>
+      <td>Business services sourced sustainably <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(E.g., consulting firms, integrators, contractors)"></i></td>
+      <td>GRI 308-1, 2; SDG 17</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efFourSeventySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 470-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage vendors meeting requirements; also percentage requirements met by each primary vendor</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 470-2</th>
+                <td>Metric</td>
+                <td>Percentage services sourced sustainably by type, total spend</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#efFourEightySub" aria-expanded="false" aria-controls="efFourEightySub">
+      <th scope="row">SIT EF 480</th>
+      <td>Topic</td>
+      <td>Mobile services sourced sustainably</td>
+      <td>GRI 308-1, 2; SDG 17</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="efFourEightySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EF 480-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage vendors meeting requirements; also percentage requirements met by each primary vendor</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EF 480-2</th>
+                <td>Metric</td>
+                <td>Percentage mobile services sourced sustainably by type, total spend</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<h3>Sourcing (400) &mdash; Enterprise-focused</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeFourTenSub" aria-expanded="false" aria-controls="eeFourTenSub">
+      <th scope="row">SIT EE 410</th>
+      <td>Topic</td>
+      <td>Supply-chain sustainability</td>
+      <td>GRI 102-9, 308-1, 2<br><br>
+        Zero Waste to Landfill and Incineration<br>
+        100% Sustainable Material Inputs are Renewable, Recyclable, Reusable<br>
+        Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway<br>
+        Land Degradation Neutrality, Including Zero Deforestation</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeFourTenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 410-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage vendors meeting requirements; also percentage requirements met by each primary vendor</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT EE 410-2</th>
+                <td>Metric</td>
+                <td>Percentage materials moved sustainably by volume/weight, total spend, over time period</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeFourTwentySub" aria-expanded="false" aria-controls="eeFourTwentySub">
+      <th scope="row">SIT EE 420</th>
+      <td>Topic</td>
+      <td>Procurement process sustainability</td>
+      <td>GRI 204; SDG 7, 9, 13, 17<br><br>
+        Zero Waste to Landfill and Incineration<br>
+        100% Sustainable Material Inputs are Renewable, Recyclable, Reusable<br>
+        Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway<br>
+        Land Degradation Neutrality, Including Zero Deforestation</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeFourTwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 420-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage purchases utilizing sustainable channels/process</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#eeFourThirtySub" aria-expanded="false" aria-controls="eeFourThirtySub">
+      <th scope="row">SIT EE 430</th>
+      <td>Topic</td>
+      <td>Sustainable sourcing for manufacturing</td>
+      <td>GRI 301-1, 2, 3; SDG 6, 9, 12, 13, 17<br><br>
+        Zero Waste to Landfill and Incineration<br>
+        100% Sustainable Material Inputs are Renewable, Recyclable, Reusable<br>
+        Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway<br>
+        Land Degradation Neutrality, Including Zero Deforestation</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="eeFourThirtySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT EE 430-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Percentage manufacturing supplies/raw materials sourced from sustainability-certified suppliers</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<!-- <p>For additional details and links to source materials, download our <a href="../../assets/SIT-Environmental-Standards--Explanations.pdf" target="_blank">Environmental Standards Explanations and References</a>.</p> -->
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<!-- START: Social -->
+<h2 id="social">Social</h2>
+<h3>Social and Economic Inclusion (100)</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#sOneTenSub" aria-expanded="false" aria-controls="sOneTenSub">
+      <th scope="row">SIT S 110</th>
+      <td>Topic</td>
+      <td>Technology accessibility <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(i.e., accommodations to facilitate access/usage for all)"></i></td>
+      <td>Voluntary Product Accessibility Template (VPAT - WCAG<!--<a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG</a>-->, U.S. Section 508, EN 301 549); SDG 3, 8, 10</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="sOneTenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT S 110-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to ensure constituent accessibility to IT products and services <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., websites, virtual collaboration platforms, chats, e-docs, applications in general)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 110-2</th>
+                <td>Metric</td>
+                <td>Accessibility criteria and extent of application to systems design and engineering</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 110-3</th>
+                <td>Metric</td>
+                <td>Extent of adoption of assistive technology <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., text-to-speech tools)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 110-4</th>
+                <td>Metric</td>
+                <td>Extent of adoption of Web Content Accessibility Guidelines</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 110-5</th>
+                <td>Metric</td>
+                <td>Extent of intentional adoption of simpler technologies accessible to non-technologists <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., low-code/no-code)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#sOneTwentySub" aria-expanded="false" aria-controls="sOneTwentySub">
+      <th scope="row">SIT S 120</th>
+      <td>Topic</td>
+      <td>Employee diversity, equity, and inclusion</td>
+      <td>GRI 401-1, 405-1, 2; SASB TC-HW-330a.1, TC-SI-330a.3; ESRS S1; SDG 5, 10<br><br>
+        SDG Ambition Benchmarks:<br>
+        - Gender Balance Across All Levels of Management<br>
+        - Equal Pay For Work of Equal Value</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="sOneTwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT S 120-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to increase diversity in IT staff and leadership team</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 120-2</th>
+                <td>Metric</td>
+                <td>Approach to increase diversity in IT talent pipeline</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 120-3</th>
+                <td>Metric</td>
+                <td>Representation of diverse groups in IT <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., gender, race, age, region)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 120-4</th>
+                <td>Metric</td>
+                <td>Percentage difference between group representation on IT staff vs. in regional workforce</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#sOneThirtySub" aria-expanded="false" aria-controls="sOneThirtySub">
+      <th scope="row">SIT S 130</th>
+      <td>Topic</td>
+      <td>Technology partner diversity</td>
+      <td>ESRS S2; SDG 5, 10<br><br>
+        Gender Balance Across All Levels of Management<br>
+        Equal Pay For Work of Equal Value</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="sOneThirtySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT S 130-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to diversify technology partner ecosystem <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., minority-owned, locally owned businesses)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 130-2</th>
+                <td>Metric</td>
+                <td>Percentage diverse vendors of total and of total spend <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., minority-owned, female-owned, locally owned, and/or located in disadvantaged regions)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#sOneFortySub" aria-expanded="false" aria-controls="sOneFortySub">
+      <th scope="row">SIT S 140</th>
+      <td>Topic</td>
+      <td>Technology inclusiveness <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., consideration of diverse groups in development lifecycle)"></i></td>
+      <td>ESRS S1; SDG 5, 10<br><br>
+        Gender Balance Across All Levels of Management<br>
+        Equal Pay For Work of Equal Value</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="sOneFortySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT S 140-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Inclusiveness approach, categories, and criteria applied to IT systems design and engineering</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 140-2</th>
+                <td>Metric</td>
+                <td>Extent to which inclusiveness considerations factored into systems origination and early design <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(i.e., user stories, requirements gathering process, validation, user experience, and functional design)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#sOneFiftySub" aria-expanded="false" aria-controls="sOneFiftySub">
+      <th scope="row">SIT S 150</th>
+      <td>Topic</td>
+      <td>Digital community engagement <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(i.e., tech-centric interaction with local businesses, institutions charities, and causes)"></i></td>
+      <td>GRI 413-1; ESRS S3; SDG 10, 11</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="sOneFiftySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT S 150-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Type and extent of tech-oriented engagement with communities <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., tech donations, digital literacy or IT skills training, 'coding for good')"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 150-2</th>
+                <td>Metric</td>
+                <td>IT budget for community engagement allocated/spent over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 150-3</th>
+                <td>Metric</td>
+                <td>Outcomes of principal engagement efforts -- quantifiable and unquantifiable</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 150-4</th>
+                <td>Metric</td>
+                <td>Approach to overcome digital divide preventing underserved communities from accessing critical technology (i.e., technology products and services related to education, jobs, and healthcare)</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<h3>Sourcing Social Accountability (200)</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#sTwoTenSub" aria-expanded="false" aria-controls="sTwoTenSub">
+      <th scope="row">SIT S 210</th>
+      <td>Topic</td>
+      <td>Technology vendor social accountability</td>
+      <td>GRI 205, 414-1; ESRS S2; SDG 10<br><br>
+        100% of Employees Across the Organization Earn a Living Wage<br>
+        Equal Pay For Work of Equal Value</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="sTwoTenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT S 210-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to assess, monitor, and hold accountable technology vendors for social requirements compliance</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 210-2</th>
+                <td>Metric</td>
+                <td>Social sustainability criteria or requirements for IT vendors <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="Vendor or supply-chain partner social sustainability criteria or requirements may include: Diversity, equity, and inclusion; Safe and healthy working conditions; No child labor; No modern slavery and forced labor; Fair wages and hours; Empowerment of employees to raise concerns safely; Freedom of association for employee; Future of work enablement (e.g., Remote work, digital literacy and future skills training, virtual workplace); Privacy protection for employees; Product safety and security; Social, economic, and environmental justice commitment; Community engagement (e.g., local-first policies)."></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 210-3</th>
+                <td>Metric</td>
+                <td>IT vendors having significant risk of child or forced labor and human rights violations, and how risk addressed</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 210-4</th>
+                <td>Metric</td>
+                <td>Approach to assess and address IT vendor corruption risk and incidents</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 210-5</th>
+                <td>Metric</td>
+                <td>Exceptions made for small or otherwise disadvantaged vendors that may not be able to meet all requirements</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#sTwoTwentySub" aria-expanded="false" aria-controls="sTwoTwentySub">
+      <th scope="row">SIT S 220</th>
+      <td>Topic</td>
+      <td>Enterprise supply-chain social accountability</td>
+      <td>GRI 205, 414-1; ESRS S2; SDG 10<br><br>
+        100% of Employees Across the Organization Earn a Living Wage<br>
+        Equal Pay For Work of Equal Value</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="sTwoTwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT S 220-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to assess, monitor, and hold accountable supply-chain partners for social requirements compliance</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 220-2</th>
+                <td>Metric</td>
+                <td>Social sustainability criteria or requirements for supply-chain partners <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="Vendor or supply-chain partner social sustainability criteria or requirements may include: Diversity, equity, and inclusion; Safe and healthy working conditions; No child labor; No modern slavery and forced labor; Fair wages and hours; Empowerment of employees to raise concerns safely; Freedom of association for employee; Future of work enablement (e.g., Remote work, digital literacy and future skills training, virtual workplace); Privacy protection for employees; Product safety and security; Social, economic, and environmental justice commitment; Community engagement (e.g., local-first policies)."></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 220-3</th>
+                <td>Metric</td>
+                <td>Supply-chain partners having significant risk of child or forced labor and human rights violations, and how risk addressed</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 220-4</th>
+                <td>Metric</td>
+                <td>Approach to assess and address supply chain partner corruption risk and incidents</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 220-5</th>
+                <td>Metric</td>
+                <td>Exceptions made for small or otherwise disadvantaged supply chain partners that may not be able to meet all requirements</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<!--
+<p class="text-small"><strong>*</strong> Vendor or supply-chain partner social sustainability criteria or requirements may include:</p>
+<ul class="text-small">
+  <li>Diversity, equity, and inclusion</li>
+  <li>Safe and healthy working conditions</li>
+  <li>No child labor</li>
+  <li>No modern slavery and forced labor</li>
+  <li>Fair wages and hours</li>
+  <li>Empowerment of employees to raise concerns safely</li>
+  <li>Freedom of association for employee</li>
+  <li>Future of work enablement (e.g., Remote work, digital literacy and future skills training, virtual workplace)</li>
+  <li>Privacy protection for employees</li>
+  <li>Product safety and security</li>
+  <li>Social, economic, and environmental justice commitment</li>
+  <li>Community engagement (e.g., local-first policies)</li>
+</ul>
+-->
+<p>&nbsp;</p>
+<h3>Health and Safety (300)</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#sThreeTenSub" aria-expanded="false" aria-controls="sThreeTenSub">
+      <th scope="row">SIT S 310</th>
+      <td>Topic</td>
+      <td>Employee health and safety</td>
+      <td>GRI 403, 416-1, 2; ESRS S1; SDG 3</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="sThreeTenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT S 310-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>IT product and service categories for which a potential negative impact on health or safety exists <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., repetitive stress disorders, vision deterioration from monitor use, virtual reality-related or AI-based systems contributing to physical injuries, etc.)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 310-2</th>
+                <td>Metric</td>
+                <td>Percentage relevant IT products and services assessed for health and safety impacts</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT S 310-3</th>
+                <td>Metric</td>
+                <td>Incidents of IT products and services non-compliance with health and safety policies/regulations, and how addressed</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<h2 id="governance">Governance</h2>
+<h3>Culture of Sustainability (100)</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gOneTenSub" aria-expanded="false" aria-controls="gOneTenSub">
+      <th scope="row">SIT G 110</th>
+      <td>Topic</td>
+      <td>Mission and values</td>
+      <td>GRI 2-22</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gOneTenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 110-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>IT and enterprise sustainability mission, core values, and communication approach</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gOneTwentySub" aria-expanded="false" aria-controls="gOneTwentySub">
+      <th scope="row">SIT G 120</th>
+      <td>Topic</td>
+      <td>Governance and accountability</td>
+      <td>GRI 1, 2-26; ESRS G1; SDG 17</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gOneTwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 120-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Sustainability governance approach <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., strategy and decision-making responsibility, accountability, stakeholder involvement)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 120-2</th>
+                <td>Metric</td>
+                <td>Accountability for sustainability reporting <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(i.e., completeness, accuracy, timeliness)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 120-3</th>
+                <td>Metric</td>
+                <td>Approach to ensure visibility of goals and progress</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 120-4</th>
+                <td>Metric</td>
+                <td>Approach to empower employees to voice sustainability concerns</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gOneThirtySub" aria-expanded="false" aria-controls="gOneThirtySub">
+      <th scope="row">SIT G 130</th>
+      <td>Topic</td>
+      <td>Investment</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gOneThirtySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 130-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to funding sustainability initiatives</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 130-2</th>
+                <td>Metric</td>
+                <td>Sustainability-specific funding as percentage of relevant budgets</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 130-3</th>
+                <td>Metric</td>
+                <td>Extent to which sustainability factored into setting, approving IT budgets</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 130-4</th>
+                <td>Metric</td>
+                <td>Extent to which sustainability factored into setting, approving project investments</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 130-5</th>
+                <td>Metric</td>
+                <td>Incentives or compensation tied to sustainability outcomes</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gOneFortySub" aria-expanded="false" aria-controls="gOneFortySub">
+      <th scope="row">SIT G 140</th>
+      <td>Topic</td>
+      <td>Training</td>
+      <td>GRI 404-1, 2, 3</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gOneFortySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 140-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Average training hours per employee, elected and compulsory, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 140-2</th>
+                <td>Metric</td>
+                <td>Programs, incentives for sustainability mentoring/coaching</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 140-3</th>
+                <td>Metric</td>
+                <td>Approach to ensure adequate pipeline of sustainability-related skills</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<h3>Data Governance (200)</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gTwoTenSub" aria-expanded="false" aria-controls="gTwoTenSub">
+      <th scope="row">SIT G 210</th>
+      <td>Topic</td>
+      <td>Data security</td>
+      <td>SASB TC-SI-230a; ESRS G1; SDG 3, 17</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gTwoTenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 210-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Frequency of data security policy/procedure review and update</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 210-2</th>
+                <td>Metric</td>
+                <td>Incidents of noncompliance with data security policies/procedures, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 210-3</th>
+                <td>Metric</td>
+                <td>Percentage data security incidents where root cause identified and corrective action taken, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 210-4</th>
+                <td>Metric</td>
+                <td>Percentage employees receiving mandated data security training</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gTwoTwentySub" aria-expanded="false" aria-controls="gTwoTwentySub">
+      <th scope="row">SIT G 220</th>
+      <td>Topic</td>
+      <td>Data privacy</td>
+      <td>GRI 418-1; SASB TC-HW-230a.1; TC-SI-220a.1; ESRS G1; SDG 3, 17</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gTwoTwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 220-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to provide constituents with greater control of personal data</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 220-2</th>
+                <td>Metric</td>
+                <td>Approach to ensure personal data management consistent with constituent expectations</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 220-3</th>
+                <td>Metric</td>
+                <td>Substantiated complaints of data misuse or lack of compliance with constituents' instructions, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 220-4</th>
+                <td>Metric</td>
+                <td>Number, percentage of constituents impacted by data exposure or loss, over time period</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gTwoThirtySub" aria-expanded="false" aria-controls="gTwoThirtySub">
+      <th scope="row">SIT G 230</th>
+      <td>Topic</td>
+      <td>Data usage</td>
+      <td>GRI 418; SASB TC-HW-230a.1; TC-SI-220a.1; ESRS G1; SDG 3, 17</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gTwoThirtySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 230-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to data usage governance <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., policy awareness/enforcement, user consent mechanisms, training, oversight, and audits, etc.)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 230-2</th>
+                <td>Metric</td>
+                <td>Data usage policy violations and constituents impacted, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 230-3</th>
+                <td>Metric</td>
+                <td>Approach to provide data usage transparency to constituents</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 230-4</th>
+                <td>Metric</td>
+                <td>Approach to limit environmental impact of data usage <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(i.e., data architecture and data-handling efficiency)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<h3>Risk Management (300)</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gThreeTenSub" aria-expanded="false" aria-controls="gThreeTenSub">
+      <th scope="row">SIT G 310</th>
+      <td>Topic</td>
+      <td>Business resiliency/continuity</td>
+      <td>SASB TC-SI- 550.a; ESRS G1; SDG 3, 9, 17</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gThreeTenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 310-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to assess and minimize environmental and economic risks to enterprise systems and service continuity</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 310-2</th>
+                <td>Metric</td>
+                <td>Resiliency requirements, assessments, and oversight of key vendors/providers <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., power providers, cloud-hosting providers, outsourcers)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 310-3</th>
+                <td>Metric</td>
+                <td>Incidents resulting in business interruption/downtime, and average and cumulative duration, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 310-4</th>
+                <td>Metric</td>
+                <td>Constituents affected by business interruptions/downtime, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 310-5</th>
+                <td>Metric</td>
+                <td>Percentage essential workers enabled to work remotely or from alternative/back-up locations</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gThreeTwentySub" aria-expanded="false" aria-controls="gThreeTwentySub">
+      <th scope="row">SIT G 320</th>
+      <td>Topic</td>
+      <td>Enterprise risk management (IT is expected to implement industry standard cyber risk and cybersecurity management strategies and mechanisms)</td>
+      <td>ESRS G1</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gThreeTwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 320-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Enterprise risk governance approach</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 320-2</th>
+                <td>Metric</td>
+                <td>Enterprise risk management practices associated with sustainability <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., assessments, education, transparency, compliance management)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gThreeThirtySub" aria-expanded="false" aria-controls="gThreeThirtySub">
+      <th scope="row">SIT G 330</th>
+      <td>Topic</td>
+      <td>Economic risk management and fraud prevention</td>
+      <td>GRI 205; ESRS G1<br><br>SDG Ambition Benchmark: Zero Incidences of Bribery</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gThreeThirtySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 330-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to minimize risk of financial fraud, internally and for third-party providers</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 330-2</th>
+                <td>Metric</td>
+                <td>Approach to increase transparency, redundancy, and frequency of financial review</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 330-3</th>
+                <td>Metric</td>
+                <td>Approach to assess and address corruption risk and incidents in business operations</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<h3>Technology and Innovation (400)</h3>
+<!-- table -->
+<div class="table-responsive-xl">
+  <table class="table">
+  <thead>
+    <tr>
+      <th scope="col" style="width: 13%;">SIT Code</th>
+      <th scope="col" style="width: 8%;">Type</th>
+      <th scope="col">Description</th>
+      <th scope="col" style="width: 30%;">Relevant third-party codes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gFourTenSub" aria-expanded="false" aria-controls="gFourTenSub">
+      <th scope="row">SIT G 410</th>
+      <td>Topic</td>
+      <td>Responsible technology innovation <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(i.e., innovation with focus on ethics and risks for human health and environment)"></i></td>
+      <td>ESRS G2; SDG 8, 9, 10, 17<br><br>
+        Net-positive Water Impact in Water-stressed Basins<br>
+        Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway<br>
+        100% Resource Recovery<br>
+        Land Degradation Neutrality, Including Zero Deforestation</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gFourTenSub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 410-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Criteria and mechanisms to ensure technology innovations are environmentally, socially, and economically sustainable</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 410-2</th>
+                <td>Metric</td>
+                <td>Percentage technology innovation projects conducted with sustainability risk and impact assessments, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 410-3</th>
+                <td>Metric</td>
+                <td>Incidents of projects failing to comply with sustainability policies or procedures, over time period</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gFourTwentySub" aria-expanded="false" aria-controls="gFourTwentySub">
+      <th scope="row">SIT G 420</th>
+      <td>Topic</td>
+      <td>Future of work enablement <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(i.e., remote and fluid work, AI-assist, automation, new talent models, roles, and skills)"></i></td>
+      <td>GRI 404-1, 2, 3w; SDG 1, 2, 4, 8, 9, 10, 17<br><br>
+        Gender Balance Across All Levels of Management<br>
+        100% of Employees Across the Organization Earn a Living Wage</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gFourTwentySub">
+          <table class="table">
+            <tbody>
+              <tr>
+                <th scope="row" style="width: 13%;">SIT G 420-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to support sustainable future of work in IT and the enterprise <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., talent modeling, remote work security and capability, automation-impact assessments)"></i></td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 420-2</th>
+                <td>Metric</td>
+                <td>Approach and expenditures for upskilling/reskilling workers for new roles when displaced by automation</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 420-3</th>
+                <td>Metric</td>
+                <td>Extent of adoption of simple technology accessible to non-technologists <i class="bi bi-info-circle" data-bs-toggle="tooltip" data-bs-title="(e.g., low-code/no-code)"></i></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+    <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gFourThirtySub" aria-expanded="false" aria-controls="gFourThirtySub">
+      <th scope="row">SIT G 430</th>
+      <td>Topic</td>
+      <td>AI governance</td>
+      <td>ESRS G1, G2; SDG 7, 9, 17<br>
+        Net-positive Water Impact in Water-stressed Basins<br>
+        Science based Emissions Reduction in Line With a 1.5-Degree Celsius Pathway</td>
+    </tr>
+    <tr>
+      <td colspan="4" class="p-0 border-bottom-0">
+        <div class="collapse" id="gFourThirtySub">
+          <table class="table">
+            <tbody>
+              <tr class="js-trigger collapsed" data-bs-toggle="collapse" data-bs-target="#gFourThirtyOneSub" aria-expanded="false" aria-controls="gFourThirtyOneSub">
+                <th scope="row" style="width: 13%;">SIT G 430-1</th>
+                <td style="width: 8%;">Metric</td>
+                <td>Approach to minimize negative economic, environmental, and social impacts from AI-enabled products and services</td>
+              </tr>
+              <tr>
+                <td colspan="3" class="p-0 border-bottom-0">
+                  <div class="collapse" id="gFourThirtyOneSub">
+                    <table class="table">
+                      <tbody>
+                        <tr>
+                          <th scope="row" style="width: 13%;">SIT G 430-1.a</th>
+                          <td style="width: 8%;">Metric</td>
+                          <td>Approach to limit AI algorithm training energy consumption</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 430-2</th>
+                <td>Metric</td>
+                <td>Incidents of failure to comply with AI policies or procedures, over time period</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 430-3</th>
+                <td>Metric</td>
+                <td>Approach to identify and reduce bias in AI analytics</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 430-4</th>
+                <td>Metric</td>
+                <td>Major risk areas identified for data-based bias and remediation steps taken</td>
+              </tr>
+              <tr>
+                <th scope="row">SIT G 430-5</th>
+                <td>Metric</td>
+                <td>Percentage AI algorithms or ML models trained using anti-bias methodologies</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</div>
+<p>&nbsp;</p>
+<!-- END: Tables -->
+
+<!-- Custom JS -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery.scrollto@2.1.3/jquery.scrollTo.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/waypoints@4.0.1/lib/jquery.waypoints.min.js"></script>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script type="text/javascript">
+$(function () {
+  setTimeout(function() {
+    console.log("tooltip delay complete");
+    $('[data-bs-toggle="tooltip"]').tooltip();
+  }, 1000);
+})
+</script>
+<script type="text/javascript">
+(function( $ ) {
+
+  /**
+   * Enable anchor scrolling.
+   */
+  function enableAnchors() {
+    // Bind to the click of all links with a #hash in the href, except 'tabs'
+    //$( 'a[href^="#"]' ).not( '.js-btn-video' ).on( 'click', function( e ) {
+    $( '.secondary a[href^="#"], .sit-subnav a[href^="#"]' ).on( 'click', function( e ) {
+
+      // Prevent the jump and the #hash from appearing on the address bar
+      e.preventDefault();
+
+      // Scroll the window, stop any previous animation, stop on user manual scroll
+      // Check https://github.com/flesler/jquery.scrollTo for more customizability
+      //$( window ).stop( true ).scrollTo( this.hash, { duration: 400, easing: 'swing' } );
+      $.scrollTo( this.hash, { duration:0, easing:'linear', offset:-120 } );
+
+    });
+  };
+
+  /**
+   * Enable waypoints
+   */
+  function enableWaypoints() {
+    // Adjust header
+    var waypoint = new Waypoint({
+      element: $( "#main" ),
+      handler: function(direction) {
+        $( ".sit-subnav" ).toggleClass( "is-visible" );
+      },
+      offset: '-20'
+    });
+  };
+
+  // Ready event
+  $( document ).ready(function() {
+    setTimeout(function() {
+      console.log("enable delay complete");
+      enableAnchors();
+      enableWaypoints();
+    }, 1000);
+  });
+
+})( jQuery );
+</script>
